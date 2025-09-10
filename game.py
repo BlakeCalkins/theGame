@@ -15,6 +15,15 @@ def bard(turn):
     a = random.randint(1, 20)
     b = random.randint(1, 20)
     return max(0, abs(a-b) - 2)
+def gambler(turn):
+    sum = 0
+    roll = random.randint(1, 12)
+    if roll % 2 == 0:
+        sum += roll
+    roll = random.randint(1, 12)
+    if roll % 2 == 0:
+        sum += roll
+    return sum
 def sharpshooter(turn):
     return random.choice([2, 8])
 def dave_from_accounting(turn):
