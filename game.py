@@ -33,6 +33,12 @@ def gambler_dmg_received(turn):
     if roll % 2 == 1:
         sum += roll
     return sum
+def forcer(turn):
+    sum = 0
+    for i in range(turn+2):
+        if random.randint(1, 20) == 20:
+            sum = 50
+    return sum
 def sharpshooter(turn):
     return random.choice([2, 8])
 def dave_from_accounting(turn):
@@ -75,8 +81,9 @@ def main():
     # print("warrior: ", test_one_hundred_thousand_times(warrior))
     # print("strategist: ", test_one_hundred_thousand_times(strategist))
     # print("bard: ", test_one_hundred_thousand_times(bard))
-    print("gambler_dmg_given: ", test_one_hundred_thousand_times(gambler_dmg_given))
-    print("gambler_dmg_received: ", test_one_hundred_thousand_times(gambler_dmg_received))
+    # print("gambler_dmg_given: ", test_one_hundred_thousand_times(gambler_dmg_given))
+    # print("gambler_dmg_received: ", test_one_hundred_thousand_times(gambler_dmg_received))
+    print("forcer: ", test_one_hundred_thousand_times_turns(forcer))
     # print("sharpshooter: ", test_one_hundred_thousand_times(sharpshooter))
     # print("dave_from_accounting: ", test_one_hundred_thousand_times(dave_from_accounting))
     # print("musketeer: ", test_one_hundred_thousand_times_turns(musketeer))
