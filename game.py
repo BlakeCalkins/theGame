@@ -39,6 +39,8 @@ def forcer(turn):
         if random.randint(1, 20) == 20:
             sum = 50
     return sum
+def paladin(turn):
+    return random.randint(1, 6) 
 def sharpshooter(turn):
     return random.choice([2, 8])
 def dave_from_accounting(turn):
@@ -83,7 +85,8 @@ def main():
     # print("bard: ", test_one_hundred_thousand_times(bard))
     # print("gambler_dmg_given: ", test_one_hundred_thousand_times(gambler_dmg_given))
     # print("gambler_dmg_received: ", test_one_hundred_thousand_times(gambler_dmg_received))
-    print("forcer: ", test_one_hundred_thousand_times_turns(forcer))
+    # print("forcer: ", test_one_hundred_thousand_times_turns(forcer))
+    print("paladin: ", test_one_hundred_thousand_times_turns(paladin))
     # print("sharpshooter: ", test_one_hundred_thousand_times(sharpshooter))
     # print("dave_from_accounting: ", test_one_hundred_thousand_times(dave_from_accounting))
     # print("musketeer: ", test_one_hundred_thousand_times_turns(musketeer))
