@@ -15,13 +15,22 @@ def bard(turn):
     a = random.randint(1, 20)
     b = random.randint(1, 20)
     return max(0, abs(a-b) - 2)
-def gambler(turn):
+def gambler_dmg_given(turn):
     sum = 0
-    roll = random.randint(1, 12)
+    roll = random.randint(1, 20)
     if roll % 2 == 0:
         sum += roll
-    roll = random.randint(1, 12)
+    roll = random.randint(1, 20)
     if roll % 2 == 0:
+        sum += roll
+    return sum
+def gambler_dmg_received(turn):
+    sum = 0
+    roll = random.randint(1, 20)
+    if roll % 2 == 1:
+        sum += roll
+    roll = random.randint(1, 20)
+    if roll % 2 == 1:
         sum += roll
     return sum
 def sharpshooter(turn):
@@ -65,7 +74,9 @@ def main():
     # print("rogue: ", test_one_hundred_thousand_times(rogue))
     # print("warrior: ", test_one_hundred_thousand_times(warrior))
     # print("strategist: ", test_one_hundred_thousand_times(strategist))
-    print("bard: ", test_one_hundred_thousand_times(bard))
+    # print("bard: ", test_one_hundred_thousand_times(bard))
+    print("gambler_dmg_given: ", test_one_hundred_thousand_times(gambler_dmg_given))
+    print("gambler_dmg_received: ", test_one_hundred_thousand_times(gambler_dmg_received))
     # print("sharpshooter: ", test_one_hundred_thousand_times(sharpshooter))
     # print("dave_from_accounting: ", test_one_hundred_thousand_times(dave_from_accounting))
     # print("musketeer: ", test_one_hundred_thousand_times_turns(musketeer))
