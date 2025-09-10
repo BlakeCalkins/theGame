@@ -1,4 +1,5 @@
 import random
+import statistics
 
 def rogue(turn):
     return random.randint(1, 4) + random.randint(1, 4)
@@ -45,8 +46,20 @@ def parasite(turn):
     return random.randint(1, 4)
 def sharpshooter(turn):
     return random.choice([2, 8])
-def dave_from_accounting(turn):
+def dave_from_human_resources(turn):
     return 5
+def weapons_dealer(turn):
+    arr = []
+    arr.append(random.randint(1, 2))
+    arr.append(random.randint(1, 4))
+    arr.append(random.randint(1, 6))
+    arr.append(random.randint(1, 8))
+    arr.append(random.randint(1, 10))
+    arr.append(random.randint(1, 12))
+    arr.append(random.randint(1, 20))
+    return statistics.median(arr)
+def broker(turn):
+    return random.randint(1, 6) + turn
 def speedster(turn):
     sum = 0
     roll = random.choice([1, 4])
@@ -56,6 +69,20 @@ def speedster(turn):
             roll = random.choice([1, 4])
             sum += roll 
     return sum
+def wild_mage(turn):
+    roll = random.randint(1, 20)
+    if roll == 1:
+        return 0 
+    elif 2 <= roll <= 7:
+        return random.randint(1, 4)
+    elif 8 <= roll <= 14:
+        return random.randint(1, 4) + random.randint(1, 4)
+    elif 15 <= roll <= 19:
+        return random.randint(1, 4) + random.randint(1, 4) + random.randint(1, 4)
+    # elif 16 <= roll <= 19:
+    #     return random.randint(1, 4) + random.randint(1, 4) + random.randint(1, 4) + random.randint(1, 4)
+    else:
+        return 50
 
 
 def test_one_hundred_thousand_times(which_class):
@@ -87,21 +114,15 @@ def main():
     # print("bard: ", test_one_hundred_thousand_times(bard))
     # print("gambler_dmg_given: ", test_one_hundred_thousand_times(gambler_dmg_given))
     # print("gambler_dmg_received: ", test_one_hundred_thousand_times(gambler_dmg_received))
-    # print("forcer: ", test_one_hundred_thousand_times_turns(forcer))
-    # print("paladin: ", test_one_hundred_thousand_times_turns(paladin))
-    print("parasite: ", test_one_hundred_thousand_times(parasite))
+    # print("forcer turns: ", test_one_hundred_thousand_times_turns(forcer))
+    # print("paladin turns: ", test_one_hundred_thousand_times_turns(paladin))
+    # print("parasite: ", test_one_hundred_thousand_times(parasite))
     # print("sharpshooter: ", test_one_hundred_thousand_times(sharpshooter))
-    # print("dave_from_accounting: ", test_one_hundred_thousand_times(dave_from_accounting))
-    # print("musketeer: ", test_one_hundred_thousand_times_turns(musketeer))
-    # print("turns it took: ", num_turns(musketeer))
-    # print("turns it took: ", num_turns(musketeer))
-    # print("turns it took: ", num_turns(musketeer))
-    # print("turns it took: ", num_turns(musketeer))
-
-
-
+    # print("dave_from_human_resources: ", test_one_hundred_thousand_times(dave_from_human_resources))
+    # print("weapons_dealer: ", test_one_hundred_thousand_times(weapons_dealer))
+    # print("broker turns: ", test_one_hundred_thousand_times_turns(broker))
+    # print("musketeer turns: ", test_one_hundred_thousand_times_turns(musketeer))
+    print("wild_mage: ", test_one_hundred_thousand_times(wild_mage))
     return
 
-
-# print("total is: ", speedster())
 main()
