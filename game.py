@@ -83,7 +83,34 @@ def wild_mage(turn):
     #     return random.randint(1, 4) + random.randint(1, 4) + random.randint(1, 4) + random.randint(1, 4)
     else:
         return 50
-
+    
+def run_game(class_a, class_b):
+    a_life = 20
+    b_life = 25
+    if class_a  == paladin:
+        a_life = 30
+    if class_b == paladin:
+        b_life = 35
+    turn = 1
+    while a_life > 0 and b_life > 0:
+        print(f"turn {turn}:")
+        a_dmg = class_a(turn)
+        print(f"{class_a.__name__} deals {a_dmg} to {class_b.__name__}.")
+        b_life -= a_dmg
+        if b_life <= 0:
+            break
+        print(f"{class_b.__name__}'s life is now {b_life}")
+        b_dmg = class_b(turn)
+        print(f"{class_b.__name__} deals {b_dmg} to {class_a.__name__}")
+        a_life -= b_dmg
+        print(f"{class_a.__name__}'s life is now {a_life}")
+        turn += 1
+    if a_life <= 0 and b_life > 0:
+        print(f"{class_b.__name__} wins!")
+    elif b_life <= 0 and a_life > 0:
+        print(f"{class_a.__name__} wins!")
+    else:
+        print(f"{class_a.__name__} wins!")
 
 def test_one_hundred_thousand_times(which_class):
     sum = 0
@@ -122,7 +149,9 @@ def main():
     # print("weapons_dealer: ", test_one_hundred_thousand_times(weapons_dealer))
     # print("broker turns: ", test_one_hundred_thousand_times_turns(broker))
     # print("musketeer turns: ", test_one_hundred_thousand_times_turns(musketeer))
-    print("wild_mage: ", test_one_hundred_thousand_times(wild_mage))
+    # print("wild_mage: ", test_one_hundred_thousand_times(wild_mage))
+
+    run_game(warrior, rogue)
     return
 
 main()
