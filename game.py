@@ -2,15 +2,25 @@ import random
 import statistics
 
 class Archetype:
-    life = 20
     def __init__(self):
-        pass
+        self.life = 20
+    def show_life(self):
+        print(f"life is {self.life}")
+    def take_dmg(self, dmg):
+        self.life -= dmg
 
-class Rogue:
+class Rogue(Archetype):
     def __init__(self):
-        pass
-    def calc_dmg(turn):
+        super().__init__()
+    def calc_dmg(self, turn=None):
         return random.randint(1, 4) + random.randint(1, 4)
+    
+class Warrior(Archetype):
+    def __init__(self):
+        super().__init__()
+    def calc_dmg(self, turn=None):
+        return random.randint(1, 8) + 1
+
 
 
 def rogue(turn):
@@ -163,7 +173,14 @@ def main():
     # print("musketeer turns: ", test_one_hundred_thousand_times_turns(musketeer))
     # print("wild_mage: ", test_one_hundred_thousand_times(wild_mage))
 
-    run_game(warrior, rogue)
+    # run_game(warrior, rogue)
+    r = Rogue()
+    print(r.calc_dmg())
+    r.show_life()
+    r.take_dmg(1)
+    r.show_life()
+
+
     return
 
 main()
