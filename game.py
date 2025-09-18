@@ -26,7 +26,31 @@ class Warrior(Archetype):
     def calc_dmg(self, turn=None):
         return random.randint(1, 8) + 1
 
-
+class Strategist(Archetype):
+    def __init__(self, name="Strategist"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn=None):
+            return max(random.randint(1, 6), random.randint(1, 6), random.randint(1, 6))
+    
+class Musketeer(Archetype):
+    def __init__(self, name="Musketeer"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn):
+        if turn % 2 == 0:
+            return random.randint(1, 20)
+        if turn % 2 == 1:
+            return 0
+        
+class Bard(Archetype, name="Bard"):
+    def __init__(self):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn=None):
+        a = random.randint(1, 20)
+        b = random.randint(1, 20)
+        return max(0, abs(a-b) - 2)
 
 def rogue(turn):
     return random.randint(1, 4) + random.randint(1, 4)
