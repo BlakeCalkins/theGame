@@ -51,6 +51,29 @@ class Bard(Archetype):
         a = random.randint(1, 20)
         b = random.randint(1, 20)
         return max(0, abs(a-b) - 2)
+    
+class Gambler(Archetype):
+    def __init__(self, name="Gambler"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn=None):
+        dmg_given = 0
+        dmg_received = 0
+        roll = random.randint(1, 20)
+        print(roll)
+        if roll % 2 == 0:
+            dmg_given += roll
+        else: 
+            dmg_received += roll
+        roll = random.randint(1, 20)
+        print(roll)
+        if roll % 2 == 0:
+            dmg_given += roll
+        else: 
+            dmg_received += roll
+        self.take_dmg(dmg_received)
+        return dmg_given
+
 
 def rogue(turn):
     return random.randint(1, 4) + random.randint(1, 4)
@@ -203,12 +226,9 @@ def main():
     # print("wild_mage: ", test_one_hundred_thousand_times(wild_mage))
 
     # run_game(warrior, rogue)
-    r = Rogue()
-    print(r.calc_dmg())
-    r.show_life()
-    r.take_dmg(1)
-    r.show_life()
-    r.show_name()
+    g = Gambler()
+    g.calc_dmg()
+    g.show_life()
 
 
     return
