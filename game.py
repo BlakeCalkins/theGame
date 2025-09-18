@@ -43,8 +43,8 @@ class Musketeer(Archetype):
         if turn % 2 == 1:
             return 0
         
-class Bard(Archetype, name="Bard"):
-    def __init__(self):
+class Bard(Archetype):
+    def __init__(self, name="Bard"):
         super().__init__()
         self.name = name
     def calc_dmg(self, turn=None):
