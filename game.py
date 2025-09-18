@@ -1,6 +1,18 @@
 import random
 import statistics
 
+class Archetype:
+    life = 20
+    def __init__(self):
+        pass
+
+class Rogue:
+    def __init__(self):
+        pass
+    def calc_dmg(turn):
+        return random.randint(1, 4) + random.randint(1, 4)
+
+
 def rogue(turn):
     return random.randint(1, 4) + random.randint(1, 4)
 def warrior(turn):
