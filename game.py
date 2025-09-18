@@ -4,20 +4,25 @@ import statistics
 class Archetype:
     def __init__(self):
         self.life = 20
+        self.name = "Archetype"
     def show_life(self):
-        print(f"life is {self.life}")
+        print(f"{self.name}'s life is {self.life}")
     def take_dmg(self, dmg):
         self.life -= dmg
+    def show_name(self):
+        print(self.name)
 
 class Rogue(Archetype):
-    def __init__(self):
+    def __init__(self, name="Rogue"):
         super().__init__()
+        self.name = name
     def calc_dmg(self, turn=None):
         return random.randint(1, 4) + random.randint(1, 4)
     
 class Warrior(Archetype):
-    def __init__(self):
+    def __init__(self, name="Warrior"):
         super().__init__()
+        self.name = name
     def calc_dmg(self, turn=None):
         return random.randint(1, 8) + 1
 
@@ -179,6 +184,7 @@ def main():
     r.show_life()
     r.take_dmg(1)
     r.show_life()
+    r.show_name()
 
 
     return
