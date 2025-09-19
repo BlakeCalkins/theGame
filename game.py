@@ -93,51 +93,85 @@ class Paladin(Archetype):
     def calc_dmg(self, turn=None):
         return random.randint(1, 6) 
 
+class Parasite(Archetype):
+    def __init__(self, name="Parasite"):
+        super().__init__()
+        self.name = name
+    def heal(self, amt):
+        self.life += amt
+    def calc_dmg(self, turn=None):
+        dmg_gain = random.randint(1, 4)
+        self.heal(dmg_gain)
+        return dmg_gain
 
+class Sharpshooter(Archetype):
+    def __init__(self, name="Sharpshooter"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn=None):
+        return random.choice([2, 8])
 
-# def paladin(turn):
-#     return random.randint(1, 6) 
-def parasite(turn):
-    return random.randint(1, 4)
-def sharpshooter(turn):
-    return random.choice([2, 8])
-def dave_from_human_resources(turn):
-    return 5
-def weapons_dealer(turn):
-    arr = []
-    arr.append(random.randint(1, 2))
-    arr.append(random.randint(1, 4))
-    arr.append(random.randint(1, 6))
-    arr.append(random.randint(1, 8))
-    arr.append(random.randint(1, 10))
-    arr.append(random.randint(1, 12))
-    arr.append(random.randint(1, 20))
-    return statistics.median(arr)
-def broker(turn):
-    return random.randint(1, 6) + turn
-def speedster(turn):
-    sum = 0
-    roll = random.choice([1, 4])
-    sum += roll
-    if roll == 4:
-        while roll == 4:
-            roll = random.choice([1, 4])
-            sum += roll 
-    return sum
-def wild_mage(turn):
-    roll = random.randint(1, 20)
-    if roll == 1:
-        return 0 
-    elif 2 <= roll <= 7:
-        return random.randint(1, 4)
-    elif 8 <= roll <= 14:
-        return random.randint(1, 4) + random.randint(1, 4)
-    elif 15 <= roll <= 19:
-        return random.randint(1, 4) + random.randint(1, 4) + random.randint(1, 4)
-    # elif 16 <= roll <= 19:
-    #     return random.randint(1, 4) + random.randint(1, 4) + random.randint(1, 4) + random.randint(1, 4)
-    else:
-        return 50
+class Dave_from_HR(Archetype):
+    def __init__(self, name="Dave_from_HR"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn=None):
+        return 5
+
+class Weapons_Dealer(Archetype):
+    def __init__(self, name="Weapons_Dealer"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn=None):
+        arr = []
+        arr.append(random.randint(1, 2))
+        arr.append(random.randint(1, 4))
+        arr.append(random.randint(1, 6))
+        arr.append(random.randint(1, 8))
+        arr.append(random.randint(1, 10))
+        arr.append(random.randint(1, 12))
+        arr.append(random.randint(1, 20))
+        return statistics.median(arr)
+
+class Broker(Archetype):
+    def __init__(self, name="Broker"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn):
+        return random.randint(1, 6) + turn
+
+class Speedster(Archetype):
+    def __init__(self, name="Speedster"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn=None):
+        sum = 0
+        roll = random.choice([1, 4])
+        sum += roll
+        if roll == 4:
+            while roll == 4:
+                roll = random.choice([1, 4])
+                sum += roll 
+        return sum
+
+class Wild_Mage(Archetype):
+    def __init__(self, name="Wild_Mage"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn=None):
+        roll = random.randint(1, 20)
+        if roll == 1:
+            self.take_dmg(random.randint(1, 4))
+            return 0 
+        elif 2 <= roll <= 7:
+            return random.randint(1, 4)
+        elif 8 <= roll <= 14:
+            return random.randint(1, 4) + random.randint(1, 4)
+        elif 15 <= roll <= 19:
+            return random.randint(1, 4) + random.randint(1, 4) + random.randint(1, 4)
+        else:
+            return 50
+        
     
 def run_game(class_a, class_b):
     a_life = 20
