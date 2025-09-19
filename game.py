@@ -3,12 +3,15 @@ import statistics
 
 class Archetype:
     def __init__(self):
-        self.life = 20
+        self.default_life = 20
+        self.life = self.default_life
         self.name = "Archetype"
     def show_life(self):
         print(f"{self.name}'s life is {self.life}")
     def take_dmg(self, dmg):
         self.life -= dmg
+    def reset_life(self):
+        self.life = self.default_life
     def show_name(self):
         print(self.name)
 
@@ -89,7 +92,7 @@ class Paladin(Archetype):
     def __init__(self, name="Paladin"):
         super().__init__()
         self.name = name
-        self.life = 30
+        self.default_life = 30
     def calc_dmg(self, turn=None):
         return random.randint(1, 6) 
 
@@ -197,14 +200,20 @@ def run_game(archetype_a, archetype_b, verbose=True):
     if archetype_a.life <= 0 and archetype_b.life > 0:
         if verbose:
             print(f"{archetype_b.name} wins!")
+        archetype_a.reset_life()
+        archetype_b.reset_life()
         return 1
     elif archetype_b.life <= 0 and archetype_a.life > 0:
         if verbose:
             print(f"{archetype_a.name} wins!") 
+        archetype_a.reset_life()
+        archetype_b.reset_life()
         return 0
     else:
         if verbose:
             print(f"{archetype_a.name} wins!")
+        archetype_a.reset_life()
+        archetype_b.reset_life()
         return 0
 
 def test_one_hundred_thousand_times(which_class):
@@ -228,6 +237,25 @@ def num_turns(which_class):
             return turn
         turn += 1
 
+def test_one_hundred_thousand_games(a_a, a_b):
+    first_half_wins_a = 0
+    first_half_wins_b = 0
+    for i in range(50000):
+        if run_game(a_a, a_b, verbose=False) == 0:
+            first_half_wins_a += 1
+        else:
+            first_half_wins_b += 1
+    print(f"{a_a.name} won {first_half_wins_a} games, {round((first_half_wins_a/50000)*100, 2)}% of all it's games going first.")
+    print(f"{a_b.name} won {first_half_wins_b} games, {round((first_half_wins_b/50000)*100, 2)}% of all it's games going second.")
+    second_half_wins_a = 0
+    second_half_wins_b = 0
+    for i in range (50000):
+        if run_game(a_b, a_a, verbose=False) == 0:
+            second_half_wins_b += 1
+        else:
+            second_half_wins_a += 1
+    print(f"{a_a.name} won {second_half_wins_a} games, {round((second_half_wins_a/50000)*100, 2)}% of all it's games going second.")
+    print(f"{a_b.name} won {second_half_wins_b} games, {round((second_half_wins_b/50000)*100, 2)}% of all it's games going first.")
 
 def main(): 
     # print("rogue: ", test_one_hundred_thousand_times(rogue))
@@ -247,9 +275,10 @@ def main():
     # print("wild_mage: ", test_one_hundred_thousand_times(wild_mage))
 
     # run_game(warrior, rogue)
-    f = Forcer()
-    p = Paladin()
-    print(run_game(f, p, verbose=False))
+    s = Strategist()
+    w = Warrior()
+    # print(run_game(s, w, verbose=True))
+    test_one_hundred_thousand_games(s, w)
 
 
     return
