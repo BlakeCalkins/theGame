@@ -173,33 +173,39 @@ class Wild_Mage(Archetype):
             return 50
         
     
-def run_game(class_a, class_b):
-    a_life = 20
-    b_life = 25
-    # if class_a  == paladin:
-    #     a_life = 30
-    # if class_b == paladin:
-    #     b_life = 35
+def run_game(archetype_a, archetype_b, verbose=True):
+    archetype_b.life += 5
     turn = 1
-    while a_life > 0 and b_life > 0:
-        print(f"turn {turn}:")
-        a_dmg = class_a(turn)
-        print(f"{class_a.__name__} deals {a_dmg} to {class_b.__name__}.")
-        b_life -= a_dmg
-        if b_life <= 0:
+    while archetype_a.life > 0 and archetype_b.life > 0:
+        if verbose:
+            print(f"turn {turn}:")
+        a_dmg = archetype_a.calc_dmg(turn)
+        if verbose:
+            print(f"{archetype_a.name} deals {a_dmg} to {archetype_b.name}.")
+        archetype_b.take_dmg(a_dmg)
+        if archetype_b.life <= 0:
             break
-        print(f"{class_b.__name__}'s life is now {b_life}")
-        b_dmg = class_b(turn)
-        print(f"{class_b.__name__} deals {b_dmg} to {class_a.__name__}")
-        a_life -= b_dmg
-        print(f"{class_a.__name__}'s life is now {a_life}")
+        if verbose:
+            print(f"{archetype_b.name}'s life is now {archetype_b.life}")
+        b_dmg = archetype_b.calc_dmg(turn)
+        if verbose:
+            print(f"{archetype_b.name} deals {b_dmg} to {archetype_a.name}")
+        archetype_a.take_dmg(b_dmg)
+        if verbose:
+            print(f"{archetype_a.name}'s life is now {archetype_a.life}")
         turn += 1
-    if a_life <= 0 and b_life > 0:
-        print(f"{class_b.__name__} wins!")
-    elif b_life <= 0 and a_life > 0:
-        print(f"{class_a.__name__} wins!")
+    if archetype_a.life <= 0 and archetype_b.life > 0:
+        if verbose:
+            print(f"{archetype_b.name} wins!")
+        return 1
+    elif archetype_b.life <= 0 and archetype_a.life > 0:
+        if verbose:
+            print(f"{archetype_a.name} wins!") 
+        return 0
     else:
-        print(f"{class_a.__name__} wins!")
+        if verbose:
+            print(f"{archetype_a.name} wins!")
+        return 0
 
 def test_one_hundred_thousand_times(which_class):
     sum = 0
@@ -243,8 +249,7 @@ def main():
     # run_game(warrior, rogue)
     f = Forcer()
     p = Paladin()
-    print(p.calc_dmg())
-    p.show_life()
+    print(run_game(f, p, verbose=False))
 
 
     return
