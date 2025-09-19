@@ -73,49 +73,30 @@ class Gambler(Archetype):
             dmg_received += roll
         self.take_dmg(dmg_received)
         return dmg_given
+    
+class Forcer(Archetype):
+    def __init__(self, name="Forcer"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn):
+        sum = 0
+        for i in range(turn+2):
+            if random.randint(1, 20) == 20:
+                sum = 50
+        return sum
+    
+class Paladin(Archetype):
+    def __init__(self, name="Paladin"):
+        super().__init__()
+        self.name = name
+        self.life = 30
+    def calc_dmg(self, turn=None):
+        return random.randint(1, 6) 
 
 
-def rogue(turn):
-    return random.randint(1, 4) + random.randint(1, 4)
-def warrior(turn):
-    return random.randint(1, 8) + 1
-def strategist(turn):
-    return max(random.randint(1, 6), random.randint(1, 6), random.randint(1, 6))
-def musketeer(turn):
-    if turn % 2 == 0:
-        return random.randint(1, 20)
-    if turn % 2 == 1:
-        return 0
-def bard(turn):
-    a = random.randint(1, 20)
-    b = random.randint(1, 20)
-    return max(0, abs(a-b) - 2)
-def gambler_dmg_given(turn):
-    sum = 0
-    roll = random.randint(1, 20)
-    if roll % 2 == 0:
-        sum += roll
-    roll = random.randint(1, 20)
-    if roll % 2 == 0:
-        sum += roll
-    return sum
-def gambler_dmg_received(turn):
-    sum = 0
-    roll = random.randint(1, 20)
-    if roll % 2 == 1:
-        sum += roll
-    roll = random.randint(1, 20)
-    if roll % 2 == 1:
-        sum += roll
-    return sum
-def forcer(turn):
-    sum = 0
-    for i in range(turn+2):
-        if random.randint(1, 20) == 20:
-            sum = 50
-    return sum
-def paladin(turn):
-    return random.randint(1, 6) 
+
+# def paladin(turn):
+#     return random.randint(1, 6) 
 def parasite(turn):
     return random.randint(1, 4)
 def sharpshooter(turn):
@@ -161,10 +142,10 @@ def wild_mage(turn):
 def run_game(class_a, class_b):
     a_life = 20
     b_life = 25
-    if class_a  == paladin:
-        a_life = 30
-    if class_b == paladin:
-        b_life = 35
+    # if class_a  == paladin:
+    #     a_life = 30
+    # if class_b == paladin:
+    #     b_life = 35
     turn = 1
     while a_life > 0 and b_life > 0:
         print(f"turn {turn}:")
@@ -226,9 +207,10 @@ def main():
     # print("wild_mage: ", test_one_hundred_thousand_times(wild_mage))
 
     # run_game(warrior, rogue)
-    g = Gambler()
-    g.calc_dmg()
-    g.show_life()
+    f = Forcer()
+    p = Paladin()
+    print(p.calc_dmg())
+    p.show_life()
 
 
     return
