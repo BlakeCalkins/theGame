@@ -1,5 +1,6 @@
 import random
 import statistics
+import sys
 
 class Archetype:
     def __init__(self):
@@ -63,13 +64,11 @@ class Gambler(Archetype):
         dmg_given = 0
         dmg_received = 0
         roll = random.randint(1, 20)
-        print(roll)
         if roll % 2 == 0:
             dmg_given += roll
         else: 
             dmg_received += roll
         roll = random.randint(1, 20)
-        print(roll)
         if roll % 2 == 0:
             dmg_given += roll
         else: 
@@ -177,8 +176,11 @@ class Wild_Mage(Archetype):
         
     
 def run_game(archetype_a, archetype_b, verbose=True):
-    archetype_b.life += 5
+    archetype_b.life += 3
     turn = 1
+    if verbose:
+        print(f"{archetype_a.name}'s life is {archetype_a.life}")
+        print(f"{archetype_b.name}'s life is {archetype_b.life}")
     while archetype_a.life > 0 and archetype_b.life > 0:
         if verbose:
             print(f"turn {turn}:")
@@ -237,7 +239,7 @@ def num_turns(which_class):
             return turn
         turn += 1
 
-def test_one_hundred_thousand_games(a_a, a_b):
+def test_one_hundred_thousand_games(a_a, a_b, output=sys.stdout):
     first_half_wins_a = 0
     first_half_wins_b = 0
     for i in range(50000):
@@ -275,10 +277,10 @@ def main():
     # print("wild_mage: ", test_one_hundred_thousand_times(wild_mage))
 
     # run_game(warrior, rogue)
-    s = Strategist()
-    w = Warrior()
-    # print(run_game(s, w, verbose=True))
-    test_one_hundred_thousand_games(s, w)
+    b = Dave_from_HR()
+    b2 = Gambler()
+    # print(run_game(b, b2, verbose=True))
+    test_one_hundred_thousand_games(b, b2)
 
 
     return
