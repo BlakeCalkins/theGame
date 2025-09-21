@@ -179,7 +179,7 @@ class Wild_Mage(Archetype):
         
     
 def run_game(archetype_a, archetype_b, verbose=True):
-    archetype_b.life += 3
+    archetype_b.life += 2
     turn = 1
     if verbose:
         print(f"{archetype_a.name}'s life is {archetype_a.life}")
@@ -262,9 +262,9 @@ def test_one_hundred_thousand_games(a_a, a_b, output=sys.stdout):
         else:
             second_half_wins_a += 1
     print(f"{a_a.name} second", file=output)
-    print(f" {second_half_wins_a}")
+    print(f"{second_half_wins_a}", file=output)
     print(f"{a_b.name} first", file=output)
-    print(f"{second_half_wins_b}")
+    print(f"{second_half_wins_b}", file=output)
 
 def main(): 
     # print("rogue: ", test_one_hundred_thousand_times(rogue))
@@ -302,7 +302,7 @@ def main():
     wim = Wild_Mage()
     archetypes = [rog, war, stg, msk, brd, gmb, frc, pal, par, shs, dav, wed, bro, spd, wim]
     matchups = 0
-    with open("tests_23_life", "w") as f:
+    with open("patch_3", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
@@ -350,7 +350,7 @@ def mirrors():
     wim1 = Wild_Mage("Wild_Mage A")
     wim2 = Wild_Mage("Wild_Mage B")
 
-    with open("tests_23_life", "a") as f:
+    with open("patch_3", "a") as f:
         print(f"Testing {rog1.name} vs {rog2.name}", file=f)
         print(f"Testing {rog1.name} vs {rog2.name}")
         test_one_hundred_thousand_games(rog1, rog2, output=f)
@@ -436,6 +436,6 @@ def fr():
     print(test_one_hundred_thousand_times_turns(frc))
 
 
-# main()
-# mirrors()
-fr()
+main()
+mirrors()
+# fr()
