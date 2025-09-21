@@ -1,0 +1,720 @@
+Testing Rogue vs Warrior
+Rogue won 11204 games, 22.41% of all it's games going first.
+Warrior won 38796 games, 77.59% of all it's games going second.
+Rogue won 26070 games, 52.14% of all it's games going second.
+Warrior won 23930 games, 47.86% of all it's games going first.
+
+Testing Rogue vs Strategist
+Rogue won 14147 games, 28.29% of all it's games going first.
+Strategist won 35853 games, 71.71% of all it's games going second.
+Rogue won 36080 games, 72.16% of all it's games going second.
+Strategist won 13920 games, 27.84% of all it's games going first.
+
+Testing Rogue vs Musketeer
+Rogue won 22480 games, 44.96% of all it's games going first.
+Musketeer won 27520 games, 55.04% of all it's games going second.
+Rogue won 32552 games, 65.1% of all it's games going second.
+Musketeer won 17448 games, 34.9% of all it's games going first.
+
+Testing Rogue vs Bard
+Rogue won 22387 games, 44.77% of all it's games going first.
+Bard won 27613 games, 55.23% of all it's games going second.
+Rogue won 31758 games, 63.52% of all it's games going second.
+Bard won 18242 games, 36.48% of all it's games going first.
+
+Testing Rogue vs Gambler
+Rogue won 30567 games, 61.13% of all it's games going first.
+Gambler won 19433 games, 38.87% of all it's games going second.
+Rogue won 32045 games, 64.09% of all it's games going second.
+Gambler won 17955 games, 35.91% of all it's games going first.
+
+Testing Rogue vs Forcer
+Rogue won 17508 games, 35.02% of all it's games going first.
+Forcer won 32492 games, 64.98% of all it's games going second.
+Rogue won 17209 games, 34.42% of all it's games going second.
+Forcer won 32791 games, 65.58% of all it's games going first.
+
+Testing Rogue vs Paladin
+Rogue won 14686 games, 29.37% of all it's games going first.
+Paladin won 35314 games, 70.63% of all it's games going second.
+Rogue won 32584 games, 65.17% of all it's games going second.
+Paladin won 17416 games, 34.83% of all it's games going first.
+
+Testing Rogue vs Parasite
+Rogue won 22653 games, 45.31% of all it's games going first.
+Parasite won 27347 games, 54.69% of all it's games going second.
+Rogue won 34320 games, 68.64% of all it's games going second.
+Parasite won 15680 games, 31.36% of all it's games going first.
+
+Testing Rogue vs Sharpshooter
+Rogue won 14643 games, 29.29% of all it's games going first.
+Sharpshooter won 35357 games, 70.71% of all it's games going second.
+Rogue won 30665 games, 61.33% of all it's games going second.
+Sharpshooter won 19335 games, 38.67% of all it's games going first.
+
+Testing Rogue vs Dave_from_HR
+Rogue won 3963 games, 7.93% of all it's games going first.
+Dave_from_HR won 46037 games, 92.07% of all it's games going second.
+Rogue won 27902 games, 55.8% of all it's games going second.
+Dave_from_HR won 22098 games, 44.2% of all it's games going first.
+
+Testing Rogue vs Weapons_Dealer
+Rogue won 36385 games, 72.77% of all it's games going first.
+Weapons_Dealer won 13615 games, 27.23% of all it's games going second.
+Rogue won 47963 games, 95.93% of all it's games going second.
+Weapons_Dealer won 2037 games, 4.07% of all it's games going first.
+
+Testing Rogue vs Broker
+Rogue won 5558 games, 11.12% of all it's games going first.
+Broker won 44442 games, 88.88% of all it's games going second.
+Rogue won 17131 games, 34.26% of all it's games going second.
+Broker won 32869 games, 65.74% of all it's games going first.
+
+Testing Rogue vs Speedster
+Rogue won 22654 games, 45.31% of all it's games going first.
+Speedster won 27346 games, 54.69% of all it's games going second.
+Rogue won 31813 games, 63.63% of all it's games going second.
+Speedster won 18187 games, 36.37% of all it's games going first.
+
+Testing Rogue vs Wild_Mage
+Rogue won 19805 games, 39.61% of all it's games going first.
+Wild_Mage won 30195 games, 60.39% of all it's games going second.
+Rogue won 30269 games, 60.54% of all it's games going second.
+Wild_Mage won 19731 games, 39.46% of all it's games going first.
+
+Testing Warrior vs Strategist
+Warrior won 23875 games, 47.75% of all it's games going first.
+Strategist won 26125 games, 52.25% of all it's games going second.
+Warrior won 40311 games, 80.62% of all it's games going second.
+Strategist won 9689 games, 19.38% of all it's games going first.
+
+Testing Warrior vs Musketeer
+Warrior won 28202 games, 56.4% of all it's games going first.
+Musketeer won 21798 games, 43.6% of all it's games going second.
+Warrior won 35674 games, 71.35% of all it's games going second.
+Musketeer won 14326 games, 28.65% of all it's games going first.
+
+Testing Warrior vs Bard
+Warrior won 26764 games, 53.53% of all it's games going first.
+Bard won 23236 games, 46.47% of all it's games going second.
+Warrior won 34804 games, 69.61% of all it's games going second.
+Bard won 15196 games, 30.39% of all it's games going first.
+
+Testing Warrior vs Gambler
+Warrior won 31502 games, 63.0% of all it's games going first.
+Gambler won 18498 games, 37.0% of all it's games going second.
+Warrior won 32617 games, 65.23% of all it's games going second.
+Gambler won 17383 games, 34.77% of all it's games going first.
+
+Testing Warrior vs Forcer
+Warrior won 20133 games, 40.27% of all it's games going first.
+Forcer won 29867 games, 59.73% of all it's games going second.
+Warrior won 19423 games, 38.85% of all it's games going second.
+Forcer won 30577 games, 61.15% of all it's games going first.
+
+Testing Warrior vs Paladin
+Warrior won 22787 games, 45.57% of all it's games going first.
+Paladin won 27213 games, 54.43% of all it's games going second.
+Warrior won 37953 games, 75.91% of all it's games going second.
+Paladin won 12047 games, 24.09% of all it's games going first.
+
+Testing Warrior vs Parasite
+Warrior won 32019 games, 64.04% of all it's games going first.
+Parasite won 17981 games, 35.96% of all it's games going second.
+Warrior won 40702 games, 81.4% of all it's games going second.
+Parasite won 9298 games, 18.6% of all it's games going first.
+
+Testing Warrior vs Sharpshooter
+Warrior won 22110 games, 44.22% of all it's games going first.
+Sharpshooter won 27890 games, 55.78% of all it's games going second.
+Warrior won 34564 games, 69.13% of all it's games going second.
+Sharpshooter won 15436 games, 30.87% of all it's games going first.
+
+Testing Warrior vs Dave_from_HR
+Warrior won 14871 games, 29.74% of all it's games going first.
+Dave_from_HR won 35129 games, 70.26% of all it's games going second.
+Warrior won 35067 games, 70.13% of all it's games going second.
+Dave_from_HR won 14933 games, 29.87% of all it's games going first.
+
+Testing Warrior vs Weapons_Dealer
+Warrior won 40491 games, 80.98% of all it's games going first.
+Weapons_Dealer won 9509 games, 19.02% of all it's games going second.
+Warrior won 48154 games, 96.31% of all it's games going second.
+Weapons_Dealer won 1846 games, 3.69% of all it's games going first.
+
+Testing Warrior vs Broker
+Warrior won 14526 games, 29.05% of all it's games going first.
+Broker won 35474 games, 70.95% of all it's games going second.
+Warrior won 24866 games, 49.73% of all it's games going second.
+Broker won 25134 games, 50.27% of all it's games going first.
+
+Testing Warrior vs Speedster
+Warrior won 26684 games, 53.37% of all it's games going first.
+Speedster won 23316 games, 46.63% of all it's games going second.
+Warrior won 34657 games, 69.31% of all it's games going second.
+Speedster won 15343 games, 30.69% of all it's games going first.
+
+Testing Warrior vs Wild_Mage
+Warrior won 24753 games, 49.51% of all it's games going first.
+Wild_Mage won 25247 games, 50.49% of all it's games going second.
+Warrior won 33168 games, 66.34% of all it's games going second.
+Wild_Mage won 16832 games, 33.66% of all it's games going first.
+
+Testing Strategist vs Musketeer
+Strategist won 20616 games, 41.23% of all it's games going first.
+Musketeer won 29384 games, 58.77% of all it's games going second.
+Strategist won 32521 games, 65.04% of all it's games going second.
+Musketeer won 17479 games, 34.96% of all it's games going first.
+
+Testing Strategist vs Bard
+Strategist won 22226 games, 44.45% of all it's games going first.
+Bard won 27774 games, 55.55% of all it's games going second.
+Strategist won 31950 games, 63.9% of all it's games going second.
+Bard won 18050 games, 36.1% of all it's games going first.
+
+Testing Strategist vs Gambler
+Strategist won 30831 games, 61.66% of all it's games going first.
+Gambler won 19169 games, 38.34% of all it's games going second.
+Strategist won 32106 games, 64.21% of all it's games going second.
+Gambler won 17894 games, 35.79% of all it's games going first.
+
+Testing Strategist vs Forcer
+Strategist won 17100 games, 34.2% of all it's games going first.
+Forcer won 32900 games, 65.8% of all it's games going second.
+Strategist won 17221 games, 34.44% of all it's games going second.
+Forcer won 32779 games, 65.56% of all it's games going first.
+
+Testing Strategist vs Paladin
+Strategist won 13240 games, 26.48% of all it's games going first.
+Paladin won 36760 games, 73.52% of all it's games going second.
+Strategist won 32556 games, 65.11% of all it's games going second.
+Paladin won 17444 games, 34.89% of all it's games going first.
+
+Testing Strategist vs Parasite
+Strategist won 21781 games, 43.56% of all it's games going first.
+Parasite won 28219 games, 56.44% of all it's games going second.
+Strategist won 34502 games, 69.0% of all it's games going second.
+Parasite won 15498 games, 31.0% of all it's games going first.
+
+Testing Strategist vs Sharpshooter
+Strategist won 12713 games, 25.43% of all it's games going first.
+Sharpshooter won 37287 games, 74.57% of all it's games going second.
+Strategist won 30254 games, 60.51% of all it's games going second.
+Sharpshooter won 19746 games, 39.49% of all it's games going first.
+
+Testing Strategist vs Dave_from_HR
+Strategist won 0 games, 0.0% of all it's games going first.
+Dave_from_HR won 50000 games, 100.0% of all it's games going second.
+Strategist won 29351 games, 58.7% of all it's games going second.
+Dave_from_HR won 20649 games, 41.3% of all it's games going first.
+
+Testing Strategist vs Weapons_Dealer
+Strategist won 37333 games, 74.67% of all it's games going first.
+Weapons_Dealer won 12667 games, 25.33% of all it's games going second.
+Strategist won 48481 games, 96.96% of all it's games going second.
+Weapons_Dealer won 1519 games, 3.04% of all it's games going first.
+
+Testing Strategist vs Broker
+Strategist won 2830 games, 5.66% of all it's games going first.
+Broker won 47170 games, 94.34% of all it's games going second.
+Strategist won 16588 games, 33.18% of all it's games going second.
+Broker won 33412 games, 66.82% of all it's games going first.
+
+Testing Strategist vs Speedster
+Strategist won 21953 games, 43.91% of all it's games going first.
+Speedster won 28047 games, 56.09% of all it's games going second.
+Strategist won 32151 games, 64.3% of all it's games going second.
+Speedster won 17849 games, 35.7% of all it's games going first.
+
+Testing Strategist vs Wild_Mage
+Strategist won 19197 games, 38.39% of all it's games going first.
+Wild_Mage won 30803 games, 61.61% of all it's games going second.
+Strategist won 30760 games, 61.52% of all it's games going second.
+Wild_Mage won 19240 games, 38.48% of all it's games going first.
+
+Testing Musketeer vs Bard
+Musketeer won 20751 games, 41.5% of all it's games going first.
+Bard won 29249 games, 58.5% of all it's games going second.
+Musketeer won 27655 games, 55.31% of all it's games going second.
+Bard won 22345 games, 44.69% of all it's games going first.
+
+Testing Musketeer vs Gambler
+Musketeer won 29962 games, 59.92% of all it's games going first.
+Gambler won 20038 games, 40.08% of all it's games going second.
+Musketeer won 28920 games, 57.84% of all it's games going second.
+Gambler won 21080 games, 42.16% of all it's games going first.
+
+Testing Musketeer vs Forcer
+Musketeer won 16153 games, 32.31% of all it's games going first.
+Forcer won 33847 games, 67.69% of all it's games going second.
+Musketeer won 15259 games, 30.52% of all it's games going second.
+Forcer won 34741 games, 69.48% of all it's games going first.
+
+Testing Musketeer vs Paladin
+Musketeer won 16892 games, 33.78% of all it's games going first.
+Paladin won 33108 games, 66.22% of all it's games going second.
+Musketeer won 27987 games, 55.97% of all it's games going second.
+Paladin won 22013 games, 44.03% of all it's games going first.
+
+Testing Musketeer vs Parasite
+Musketeer won 25301 games, 50.6% of all it's games going first.
+Parasite won 24699 games, 49.4% of all it's games going second.
+Musketeer won 32872 games, 65.74% of all it's games going second.
+Parasite won 17128 games, 34.26% of all it's games going first.
+
+Testing Musketeer vs Sharpshooter
+Musketeer won 18965 games, 37.93% of all it's games going first.
+Sharpshooter won 31035 games, 62.07% of all it's games going second.
+Musketeer won 25988 games, 51.98% of all it's games going second.
+Sharpshooter won 24012 games, 48.02% of all it's games going first.
+
+Testing Musketeer vs Dave_from_HR
+Musketeer won 16940 games, 33.88% of all it's games going first.
+Dave_from_HR won 33060 games, 66.12% of all it's games going second.
+Musketeer won 28560 games, 57.12% of all it's games going second.
+Dave_from_HR won 21440 games, 42.88% of all it's games going first.
+
+Testing Musketeer vs Weapons_Dealer
+Musketeer won 28170 games, 56.34% of all it's games going first.
+Weapons_Dealer won 21830 games, 43.66% of all it's games going second.
+Musketeer won 38745 games, 77.49% of all it's games going second.
+Weapons_Dealer won 11255 games, 22.51% of all it's games going first.
+
+Testing Musketeer vs Broker
+Musketeer won 14181 games, 28.36% of all it's games going first.
+Broker won 35819 games, 71.64% of all it's games going second.
+Musketeer won 17011 games, 34.02% of all it's games going second.
+Broker won 32989 games, 65.98% of all it's games going first.
+
+Testing Musketeer vs Speedster
+Musketeer won 22137 games, 44.27% of all it's games going first.
+Speedster won 27863 games, 55.73% of all it's games going second.
+Musketeer won 28723 games, 57.45% of all it's games going second.
+Speedster won 21277 games, 42.55% of all it's games going first.
+
+Testing Musketeer vs Wild_Mage
+Musketeer won 18474 games, 36.95% of all it's games going first.
+Wild_Mage won 31526 games, 63.05% of all it's games going second.
+Musketeer won 25209 games, 50.42% of all it's games going second.
+Wild_Mage won 24791 games, 49.58% of all it's games going first.
+
+Testing Bard vs Gambler
+Bard won 30043 games, 60.09% of all it's games going first.
+Gambler won 19957 games, 39.91% of all it's games going second.
+Bard won 31402 games, 62.8% of all it's games going second.
+Gambler won 18598 games, 37.2% of all it's games going first.
+
+Testing Bard vs Forcer
+Bard won 16807 games, 33.61% of all it's games going first.
+Forcer won 33193 games, 66.39% of all it's games going second.
+Bard won 16363 games, 32.73% of all it's games going second.
+Forcer won 33637 games, 67.27% of all it's games going first.
+
+Testing Bard vs Paladin
+Bard won 16829 games, 33.66% of all it's games going first.
+Paladin won 33171 games, 66.34% of all it's games going second.
+Bard won 27534 games, 55.07% of all it's games going second.
+Paladin won 22466 games, 44.93% of all it's games going first.
+
+Testing Bard vs Parasite
+Bard won 23034 games, 46.07% of all it's games going first.
+Parasite won 26966 games, 53.93% of all it's games going second.
+Bard won 30025 games, 60.05% of all it's games going second.
+Parasite won 19975 games, 39.95% of all it's games going first.
+
+Testing Bard vs Sharpshooter
+Bard won 18163 games, 36.33% of all it's games going first.
+Sharpshooter won 31837 games, 63.67% of all it's games going second.
+Bard won 27753 games, 55.51% of all it's games going second.
+Sharpshooter won 22247 games, 44.49% of all it's games going first.
+
+Testing Bard vs Dave_from_HR
+Bard won 13964 games, 27.93% of all it's games going first.
+Dave_from_HR won 36036 games, 72.07% of all it's games going second.
+Bard won 23749 games, 47.5% of all it's games going second.
+Dave_from_HR won 26251 games, 52.5% of all it's games going first.
+
+Testing Bard vs Weapons_Dealer
+Bard won 28445 games, 56.89% of all it's games going first.
+Weapons_Dealer won 21555 games, 43.11% of all it's games going second.
+Bard won 38550 games, 77.1% of all it's games going second.
+Weapons_Dealer won 11450 games, 22.9% of all it's games going first.
+
+Testing Bard vs Broker
+Bard won 13138 games, 26.28% of all it's games going first.
+Broker won 36862 games, 73.72% of all it's games going second.
+Bard won 18850 games, 37.7% of all it's games going second.
+Broker won 31150 games, 62.3% of all it's games going first.
+
+Testing Bard vs Speedster
+Bard won 22277 games, 44.55% of all it's games going first.
+Speedster won 27723 games, 55.45% of all it's games going second.
+Bard won 28554 games, 57.11% of all it's games going second.
+Speedster won 21446 games, 42.89% of all it's games going first.
+
+Testing Bard vs Wild_Mage
+Bard won 19230 games, 38.46% of all it's games going first.
+Wild_Mage won 30770 games, 61.54% of all it's games going second.
+Bard won 25995 games, 51.99% of all it's games going second.
+Wild_Mage won 24005 games, 48.01% of all it's games going first.
+
+Testing Gambler vs Forcer
+Gambler won 21203 games, 42.41% of all it's games going first.
+Forcer won 28797 games, 57.59% of all it's games going second.
+Gambler won 21350 games, 42.7% of all it's games going second.
+Forcer won 28650 games, 57.3% of all it's games going first.
+
+Testing Gambler vs Paladin
+Gambler won 12717 games, 25.43% of all it's games going first.
+Paladin won 37283 games, 74.57% of all it's games going second.
+Gambler won 14618 games, 29.24% of all it's games going second.
+Paladin won 35382 games, 70.76% of all it's games going first.
+
+Testing Gambler vs Parasite
+Gambler won 19211 games, 38.42% of all it's games going first.
+Parasite won 30789 games, 61.58% of all it's games going second.
+Gambler won 19869 games, 39.74% of all it's games going second.
+Parasite won 30131 games, 60.26% of all it's games going first.
+
+Testing Gambler vs Sharpshooter
+Gambler won 18151 games, 36.3% of all it's games going first.
+Sharpshooter won 31849 games, 63.7% of all it's games going second.
+Gambler won 19403 games, 38.81% of all it's games going second.
+Sharpshooter won 30597 games, 61.19% of all it's games going first.
+
+Testing Gambler vs Dave_from_HR
+Gambler won 17483 games, 34.97% of all it's games going first.
+Dave_from_HR won 32517 games, 65.03% of all it's games going second.
+Gambler won 19369 games, 38.74% of all it's games going second.
+Dave_from_HR won 30631 games, 61.26% of all it's games going first.
+
+Testing Gambler vs Weapons_Dealer
+Gambler won 19261 games, 38.52% of all it's games going first.
+Weapons_Dealer won 30739 games, 61.48% of all it's games going second.
+Gambler won 21329 games, 42.66% of all it's games going second.
+Weapons_Dealer won 28671 games, 57.34% of all it's games going first.
+
+Testing Gambler vs Broker
+Gambler won 18306 games, 36.61% of all it's games going first.
+Broker won 31694 games, 63.39% of all it's games going second.
+Gambler won 19286 games, 38.57% of all it's games going second.
+Broker won 30714 games, 61.43% of all it's games going first.
+
+Testing Gambler vs Speedster
+Gambler won 18315 games, 36.63% of all it's games going first.
+Speedster won 31685 games, 63.37% of all it's games going second.
+Gambler won 19984 games, 39.97% of all it's games going second.
+Speedster won 30016 games, 60.03% of all it's games going first.
+
+Testing Gambler vs Wild_Mage
+Gambler won 17882 games, 35.76% of all it's games going first.
+Wild_Mage won 32118 games, 64.24% of all it's games going second.
+Gambler won 18879 games, 37.76% of all it's games going second.
+Wild_Mage won 31121 games, 62.24% of all it's games going first.
+
+Testing Forcer vs Paladin
+Forcer won 40688 games, 81.38% of all it's games going first.
+Paladin won 9312 games, 18.62% of all it's games going second.
+Forcer won 42040 games, 84.08% of all it's games going second.
+Paladin won 7960 games, 15.92% of all it's games going first.
+
+Testing Forcer vs Parasite
+Forcer won 46654 games, 93.31% of all it's games going first.
+Parasite won 3346 games, 6.69% of all it's games going second.
+Forcer won 47967 games, 95.93% of all it's games going second.
+Parasite won 2033 games, 4.07% of all it's games going first.
+
+Testing Forcer vs Sharpshooter
+Forcer won 32421 games, 64.84% of all it's games going first.
+Sharpshooter won 17579 games, 35.16% of all it's games going second.
+Forcer won 32905 games, 65.81% of all it's games going second.
+Sharpshooter won 17095 games, 34.19% of all it's games going first.
+
+Testing Forcer vs Dave_from_HR
+Forcer won 30291 games, 60.58% of all it's games going first.
+Dave_from_HR won 19709 games, 39.42% of all it's games going second.
+Forcer won 30168 games, 60.34% of all it's games going second.
+Dave_from_HR won 19832 games, 39.66% of all it's games going first.
+
+Testing Forcer vs Weapons_Dealer
+Forcer won 38687 games, 77.37% of all it's games going first.
+Weapons_Dealer won 11313 games, 22.63% of all it's games going second.
+Forcer won 39902 games, 79.8% of all it's games going second.
+Weapons_Dealer won 10098 games, 20.2% of all it's games going first.
+
+Testing Forcer vs Broker
+Forcer won 29594 games, 59.19% of all it's games going first.
+Broker won 20406 games, 40.81% of all it's games going second.
+Forcer won 26911 games, 53.82% of all it's games going second.
+Broker won 23089 games, 46.18% of all it's games going first.
+
+Testing Forcer vs Speedster
+Forcer won 33328 games, 66.66% of all it's games going first.
+Speedster won 16672 games, 33.34% of all it's games going second.
+Forcer won 32717 games, 65.43% of all it's games going second.
+Speedster won 17283 games, 34.57% of all it's games going first.
+
+Testing Forcer vs Wild_Mage
+Forcer won 31381 games, 62.76% of all it's games going first.
+Wild_Mage won 18619 games, 37.24% of all it's games going second.
+Forcer won 30131 games, 60.26% of all it's games going second.
+Wild_Mage won 19869 games, 39.74% of all it's games going first.
+
+Testing Paladin vs Parasite
+Paladin won 6968 games, 13.94% of all it's games going first.
+Parasite won 43032 games, 86.06% of all it's games going second.
+Paladin won 13420 games, 26.84% of all it's games going second.
+Parasite won 36580 games, 73.16% of all it's games going first.
+
+Testing Paladin vs Sharpshooter
+Paladin won 17684 games, 35.37% of all it's games going first.
+Sharpshooter won 32316 games, 64.63% of all it's games going second.
+Paladin won 33305 games, 66.61% of all it's games going second.
+Sharpshooter won 16695 games, 33.39% of all it's games going first.
+
+Testing Paladin vs Dave_from_HR
+Paladin won 10118 games, 20.24% of all it's games going first.
+Dave_from_HR won 39882 games, 79.76% of all it's games going second.
+Paladin won 31812 games, 63.62% of all it's games going second.
+Dave_from_HR won 18188 games, 36.38% of all it's games going first.
+
+Testing Paladin vs Weapons_Dealer
+Paladin won 37591 games, 75.18% of all it's games going first.
+Weapons_Dealer won 12409 games, 24.82% of all it's games going second.
+Paladin won 47684 games, 95.37% of all it's games going second.
+Weapons_Dealer won 2316 games, 4.63% of all it's games going first.
+
+Testing Paladin vs Broker
+Paladin won 3498 games, 7.0% of all it's games going first.
+Broker won 46502 games, 93.0% of all it's games going second.
+Paladin won 11983 games, 23.97% of all it's games going second.
+Broker won 38017 games, 76.03% of all it's games going first.
+
+Testing Paladin vs Speedster
+Paladin won 23151 games, 46.3% of all it's games going first.
+Speedster won 26849 games, 53.7% of all it's games going second.
+Paladin won 32402 games, 64.8% of all it's games going second.
+Speedster won 17598 games, 35.2% of all it's games going first.
+
+Testing Paladin vs Wild_Mage
+Paladin won 19640 games, 39.28% of all it's games going first.
+Wild_Mage won 30360 games, 60.72% of all it's games going second.
+Paladin won 29503 games, 59.01% of all it's games going second.
+Wild_Mage won 20497 games, 40.99% of all it's games going first.
+
+Testing Parasite vs Sharpshooter
+Parasite won 16877 games, 33.75% of all it's games going first.
+Sharpshooter won 33123 games, 66.25% of all it's games going second.
+Parasite won 26001 games, 52.0% of all it's games going second.
+Sharpshooter won 23999 games, 48.0% of all it's games going first.
+
+Testing Parasite vs Dave_from_HR
+Parasite won 13998 games, 28.0% of all it's games going first.
+Dave_from_HR won 36002 games, 72.0% of all it's games going second.
+Parasite won 28114 games, 56.23% of all it's games going second.
+Dave_from_HR won 21886 games, 43.77% of all it's games going first.
+
+Testing Parasite vs Weapons_Dealer
+Parasite won 40753 games, 81.51% of all it's games going first.
+Weapons_Dealer won 9247 games, 18.49% of all it's games going second.
+Parasite won 46765 games, 93.53% of all it's games going second.
+Weapons_Dealer won 3235 games, 6.47% of all it's games going first.
+
+Testing Parasite vs Broker
+Parasite won 191 games, 0.38% of all it's games going first.
+Broker won 49809 games, 99.62% of all it's games going second.
+Parasite won 1272 games, 2.54% of all it's games going second.
+Broker won 48728 games, 97.46% of all it's games going first.
+
+Testing Parasite vs Speedster
+Parasite won 20467 games, 40.93% of all it's games going first.
+Speedster won 29533 games, 59.07% of all it's games going second.
+Parasite won 26633 games, 53.27% of all it's games going second.
+Speedster won 23367 games, 46.73% of all it's games going first.
+
+Testing Parasite vs Wild_Mage
+Parasite won 16646 games, 33.29% of all it's games going first.
+Wild_Mage won 33354 games, 66.71% of all it's games going second.
+Parasite won 23111 games, 46.22% of all it's games going second.
+Wild_Mage won 26889 games, 53.78% of all it's games going first.
+
+Testing Sharpshooter vs Dave_from_HR
+Sharpshooter won 15649 games, 31.3% of all it's games going first.
+Dave_from_HR won 34351 games, 68.7% of all it's games going second.
+Sharpshooter won 34259 games, 68.52% of all it's games going second.
+Dave_from_HR won 15741 games, 31.48% of all it's games going first.
+
+Testing Sharpshooter vs Weapons_Dealer
+Sharpshooter won 30465 games, 60.93% of all it's games going first.
+Weapons_Dealer won 19535 games, 39.07% of all it's games going second.
+Sharpshooter won 44223 games, 88.45% of all it's games going second.
+Weapons_Dealer won 5777 games, 11.55% of all it's games going first.
+
+Testing Sharpshooter vs Broker
+Sharpshooter won 13916 games, 27.83% of all it's games going first.
+Broker won 36084 games, 72.17% of all it's games going second.
+Sharpshooter won 22076 games, 44.15% of all it's games going second.
+Broker won 27924 games, 55.85% of all it's games going first.
+
+Testing Sharpshooter vs Speedster
+Sharpshooter won 23494 games, 46.99% of all it's games going first.
+Speedster won 26506 games, 53.01% of all it's games going second.
+Sharpshooter won 32614 games, 65.23% of all it's games going second.
+Speedster won 17386 games, 34.77% of all it's games going first.
+
+Testing Sharpshooter vs Wild_Mage
+Sharpshooter won 20438 games, 40.88% of all it's games going first.
+Wild_Mage won 29562 games, 59.12% of all it's games going second.
+Sharpshooter won 30100 games, 60.2% of all it's games going second.
+Wild_Mage won 19900 games, 39.8% of all it's games going first.
+
+Testing Dave_from_HR vs Weapons_Dealer
+Dave_from_HR won 46255 games, 92.51% of all it's games going first.
+Weapons_Dealer won 3745 games, 7.49% of all it's games going second.
+Dave_from_HR won 49946 games, 99.89% of all it's games going second.
+Weapons_Dealer won 54 games, 0.11% of all it's games going first.
+
+Testing Dave_from_HR vs Broker
+Dave_from_HR won 4821 games, 9.64% of all it's games going first.
+Broker won 45179 games, 90.36% of all it's games going second.
+Dave_from_HR won 27629 games, 55.26% of all it's games going second.
+Broker won 22371 games, 44.74% of all it's games going first.
+
+Testing Dave_from_HR vs Speedster
+Dave_from_HR won 25098 games, 50.2% of all it's games going first.
+Speedster won 24902 games, 49.8% of all it's games going second.
+Dave_from_HR won 37423 games, 74.85% of all it's games going second.
+Speedster won 12577 games, 25.15% of all it's games going first.
+
+Testing Dave_from_HR vs Wild_Mage
+Dave_from_HR won 23767 games, 47.53% of all it's games going first.
+Wild_Mage won 26233 games, 52.47% of all it's games going second.
+Dave_from_HR won 35391 games, 70.78% of all it's games going second.
+Wild_Mage won 14609 games, 29.22% of all it's games going first.
+
+Testing Weapons_Dealer vs Broker
+Weapons_Dealer won 313 games, 0.63% of all it's games going first.
+Broker won 49687 games, 99.37% of all it's games going second.
+Weapons_Dealer won 2467 games, 4.93% of all it's games going second.
+Broker won 47533 games, 95.07% of all it's games going first.
+
+Testing Weapons_Dealer vs Speedster
+Weapons_Dealer won 13723 games, 27.45% of all it's games going first.
+Speedster won 36277 games, 72.55% of all it's games going second.
+Weapons_Dealer won 21705 games, 43.41% of all it's games going second.
+Speedster won 28295 games, 56.59% of all it's games going first.
+
+Testing Weapons_Dealer vs Wild_Mage
+Weapons_Dealer won 7934 games, 15.87% of all it's games going first.
+Wild_Mage won 42066 games, 84.13% of all it's games going second.
+Weapons_Dealer won 18579 games, 37.16% of all it's games going second.
+Wild_Mage won 31421 games, 62.84% of all it's games going first.
+
+Testing Broker vs Speedster
+Broker won 31091 games, 62.18% of all it's games going first.
+Speedster won 18909 games, 37.82% of all it's games going second.
+Broker won 37124 games, 74.25% of all it's games going second.
+Speedster won 12876 games, 25.75% of all it's games going first.
+
+Testing Broker vs Wild_Mage
+Broker won 30192 games, 60.38% of all it's games going first.
+Wild_Mage won 19808 games, 39.62% of all it's games going second.
+Broker won 35608 games, 71.22% of all it's games going second.
+Wild_Mage won 14392 games, 28.78% of all it's games going first.
+
+Testing Speedster vs Wild_Mage
+Speedster won 19211 games, 38.42% of all it's games going first.
+Wild_Mage won 30789 games, 61.58% of all it's games going second.
+Speedster won 25584 games, 51.17% of all it's games going second.
+Wild_Mage won 24416 games, 48.83% of all it's games going first.
+
+Testing Rogue A vs Rogue B
+Rogue A won 15367 games, 30.73% of all it's games going first.
+Rogue B won 34633 games, 69.27% of all it's games going second.
+Rogue A won 34720 games, 69.44% of all it's games going second.
+Rogue B won 15280 games, 30.56% of all it's games going first.
+
+Testing Warrior A vs Warrior B
+Warrior A won 18458 games, 36.92% of all it's games going first.
+Warrior B won 31542 games, 63.08% of all it's games going second.
+Warrior A won 31588 games, 63.18% of all it's games going second.
+Warrior B won 18412 games, 36.82% of all it's games going first.
+
+Testing Strategist A vs Strategist B
+Strategist A won 12280 games, 24.56% of all it's games going first.
+Strategist B won 37720 games, 75.44% of all it's games going second.
+Strategist A won 37596 games, 75.19% of all it's games going second.
+Strategist B won 12404 games, 24.81% of all it's games going first.
+
+Testing Musketeer A vs Musketeer B
+Musketeer A won 26034 games, 52.07% of all it's games going first.
+Musketeer B won 23966 games, 47.93% of all it's games going second.
+Musketeer A won 23878 games, 47.76% of all it's games going second.
+Musketeer B won 26122 games, 52.24% of all it's games going first.
+
+Testing Bard A vs Bard B
+Bard A won 21387 games, 42.77% of all it's games going first.
+Bard B won 28613 games, 57.23% of all it's games going second.
+Bard A won 28445 games, 56.89% of all it's games going second.
+Bard B won 21555 games, 43.11% of all it's games going first.
+
+Testing Gambler A vs Gambler B
+Gambler A won 26677 games, 53.35% of all it's games going first.
+Gambler B won 23323 games, 46.65% of all it's games going second.
+Gambler A won 22958 games, 45.92% of all it's games going second.
+Gambler B won 27042 games, 54.08% of all it's games going first.
+
+Testing Forcer A vs Forcer B
+Forcer A won 28070 games, 56.14% of all it's games going first.
+Forcer B won 21930 games, 43.86% of all it's games going second.
+Forcer A won 22059 games, 44.12% of all it's games going second.
+Forcer B won 27941 games, 55.88% of all it's games going first.
+
+Testing Paladin A vs Paladin B
+Paladin A won 16669 games, 33.34% of all it's games going first.
+Paladin B won 33331 games, 66.66% of all it's games going second.
+Paladin A won 33495 games, 66.99% of all it's games going second.
+Paladin B won 16505 games, 33.01% of all it's games going first.
+
+Testing Parasite A vs Parasite B
+Parasite A won 23563 games, 47.13% of all it's games going first.
+Parasite B won 26437 games, 52.87% of all it's games going second.
+Parasite A won 26606 games, 53.21% of all it's games going second.
+Parasite B won 23394 games, 46.79% of all it's games going first.
+
+Testing Sharpshooter A vs Sharpshooter B
+Sharpshooter A won 19406 games, 38.81% of all it's games going first.
+Sharpshooter B won 30594 games, 61.19% of all it's games going second.
+Sharpshooter A won 30280 games, 60.56% of all it's games going second.
+Sharpshooter B won 19720 games, 39.44% of all it's games going first.
+
+Testing Dave Kinkade vs Dave Calkins
+Dave Kinkade won 0 games, 0.0% of all it's games going first.
+Dave Calkins won 50000 games, 100.0% of all it's games going second.
+Dave Kinkade won 50000 games, 100.0% of all it's games going second.
+Dave Calkins won 0 games, 0.0% of all it's games going first.
+
+Testing Weapons_Dealer A vs Weapons_Dealer B
+Weapons_Dealer A won 13173 games, 26.35% of all it's games going first.
+Weapons_Dealer B won 36827 games, 73.65% of all it's games going second.
+Weapons_Dealer A won 36948 games, 73.9% of all it's games going second.
+Weapons_Dealer B won 13052 games, 26.1% of all it's games going first.
+
+Testing Broker A vs Broker B
+Broker A won 21301 games, 42.6% of all it's games going first.
+Broker B won 28699 games, 57.4% of all it's games going second.
+Broker A won 28851 games, 57.7% of all it's games going second.
+Broker B won 21149 games, 42.3% of all it's games going first.
+
+Testing Speedster A vs Speedster B
+Speedster A won 21530 games, 43.06% of all it's games going first.
+Speedster B won 28470 games, 56.94% of all it's games going second.
+Speedster A won 28421 games, 56.84% of all it's games going second.
+Speedster B won 21579 games, 43.16% of all it's games going first.
+
+Testing Wild_Mage A vs Wild_Mage B
+Wild_Mage A won 21457 games, 42.91% of all it's games going first.
+Wild_Mage B won 28543 games, 57.09% of all it's games going second.
+Wild_Mage A won 28226 games, 56.45% of all it's games going second.
+Wild_Mage B won 21774 games, 43.55% of all it's games going first.
+

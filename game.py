@@ -82,7 +82,7 @@ class Forcer(Archetype):
         self.name = name
     def calc_dmg(self, turn):
         sum = 0
-        for i in range(turn+2):
+        for i in range(turn+1):
             if random.randint(1, 20) == 20:
                 sum = 50
         return sum
@@ -133,14 +133,17 @@ class Weapons_Dealer(Archetype):
         arr.append(random.randint(1, 10))
         arr.append(random.randint(1, 12))
         arr.append(random.randint(1, 20))
-        return statistics.median(arr)
+        s_arr = sorted(arr)
+        first_five = s_arr[:5]
+        last_two = s_arr[-2:]
+        return max(0, (sum(last_two) - sum(first_five)))
 
 class Broker(Archetype):
     def __init__(self, name="Broker"):
         super().__init__()
         self.name = name
     def calc_dmg(self, turn):
-        return random.randint(1, 6) + turn
+        return random.randint(1, 4) + turn
 
 class Speedster(Archetype):
     def __init__(self, name="Speedster"):
@@ -221,7 +224,7 @@ def run_game(archetype_a, archetype_b, verbose=True):
 def test_one_hundred_thousand_times(which_class):
     sum = 0
     for i in range(100000):
-        sum += which_class(1)
+        sum += which_class.calc_dmg()
     return sum / 100000
 
 def test_one_hundred_thousand_times_turns(which_class):
@@ -234,7 +237,7 @@ def num_turns(which_class):
     turn = 1 
     total = 0
     while total < 20:
-        total += which_class(turn)
+        total += which_class.calc_dmg(turn)
         if total >= 20:
             return turn
         turn += 1
@@ -247,8 +250,10 @@ def test_one_hundred_thousand_games(a_a, a_b, output=sys.stdout):
             first_half_wins_a += 1
         else:
             first_half_wins_b += 1
-    print(f"{a_a.name} won {first_half_wins_a} games, {round((first_half_wins_a/50000)*100, 2)}% of all it's games going first.")
-    print(f"{a_b.name} won {first_half_wins_b} games, {round((first_half_wins_b/50000)*100, 2)}% of all it's games going second.")
+    print(f"{a_a.name} first", file=output)
+    print(f"{first_half_wins_a}", file=output)
+    print(f"{a_b.name} second", file=output)
+    print(f"{first_half_wins_b}", file=output)
     second_half_wins_a = 0
     second_half_wins_b = 0
     for i in range (50000):
@@ -256,13 +261,16 @@ def test_one_hundred_thousand_games(a_a, a_b, output=sys.stdout):
             second_half_wins_b += 1
         else:
             second_half_wins_a += 1
-    print(f"{a_a.name} won {second_half_wins_a} games, {round((second_half_wins_a/50000)*100, 2)}% of all it's games going second.")
-    print(f"{a_b.name} won {second_half_wins_b} games, {round((second_half_wins_b/50000)*100, 2)}% of all it's games going first.")
+    print(f"{a_a.name} second", file=output)
+    print(f" {second_half_wins_a}")
+    print(f"{a_b.name} first", file=output)
+    print(f"{second_half_wins_b}")
 
 def main(): 
     # print("rogue: ", test_one_hundred_thousand_times(rogue))
     # print("warrior: ", test_one_hundred_thousand_times(warrior))
     # print("strategist: ", test_one_hundred_thousand_times(strategist))
+    # print("musketeer turns: ", test_one_hundred_thousand_times_turns(musketeer))
     # print("bard: ", test_one_hundred_thousand_times(bard))
     # print("gambler_dmg_given: ", test_one_hundred_thousand_times(gambler_dmg_given))
     # print("gambler_dmg_received: ", test_one_hundred_thousand_times(gambler_dmg_received))
@@ -273,16 +281,161 @@ def main():
     # print("dave_from_human_resources: ", test_one_hundred_thousand_times(dave_from_human_resources))
     # print("weapons_dealer: ", test_one_hundred_thousand_times(weapons_dealer))
     # print("broker turns: ", test_one_hundred_thousand_times_turns(broker))
-    # print("musketeer turns: ", test_one_hundred_thousand_times_turns(musketeer))
-    # print("wild_mage: ", test_one_hundred_thousand_times(wild_mage))
+    #speedster
+    #print("wild_mage: ", test_one_hundred_thousand_times(wild_mage))
 
-    # run_game(warrior, rogue)
-    b = Dave_from_HR()
-    b2 = Gambler()
+
+    rog = Rogue()
+    war = Warrior()
+    stg = Strategist()
+    msk = Musketeer()
+    brd = Bard()
+    gmb = Gambler()
+    frc = Forcer()
+    pal = Paladin()
+    par = Parasite()
+    shs = Sharpshooter()
+    dav = Dave_from_HR()
+    wed = Weapons_Dealer()
+    bro = Broker()
+    spd = Speedster()
+    wim = Wild_Mage()
+    archetypes = [rog, war, stg, msk, brd, gmb, frc, pal, par, shs, dav, wed, bro, spd, wim]
+    matchups = 0
+    with open("tests_23_life", "w") as f:
+        for i, type1 in enumerate(archetypes):
+            for type2 in archetypes[i+1:]:
+                print(f"Testing {type1.name} vs {type2.name}", file=f)
+                test_one_hundred_thousand_games(type1, type2, output=f)
+                print(file=f)
+                matchups+=1
+                print(matchups)
+
+
     # print(run_game(b, b2, verbose=True))
-    test_one_hundred_thousand_games(b, b2)
+    # test_one_hundred_thousand_games(b, b2)
 
 
     return
 
-main()
+def mirrors():
+    rog1 = Rogue("Rogue A")
+    rog2 = Rogue("Rogue B")
+    war1 = Warrior("Warrior A")
+    war2 = Warrior("Warrior B")
+    stg1 = Strategist("Strategist A")
+    stg2 = Strategist("Strategist B")
+    msk1 = Musketeer("Musketeer A")
+    msk2 = Musketeer("Musketeer B")
+    brd1 = Bard("Bard A")
+    brd2 = Bard("Bard B")
+    gmb1 = Gambler("Gambler A")
+    gmb2 = Gambler("Gambler B")
+    frc1 = Forcer("Forcer A")
+    frc2 = Forcer("Forcer B")
+    pal1 = Paladin("Paladin A")
+    pal2 = Paladin("Paladin B")
+    par1 = Parasite("Parasite A")
+    par2 = Parasite("Parasite B")
+    shs1 = Sharpshooter("Sharpshooter A")
+    shs2 = Sharpshooter("Sharpshooter B")
+    dav1 = Dave_from_HR("Dave Kinkade")
+    dav2 = Dave_from_HR("Dave Calkins")
+    wed1 = Weapons_Dealer("Weapons_Dealer A")
+    wed2 = Weapons_Dealer("Weapons_Dealer B")
+    bro1 = Broker("Broker A")
+    bro2 = Broker("Broker B")
+    spd1 = Speedster("Speedster A")
+    spd2 = Speedster("Speedster B")
+    wim1 = Wild_Mage("Wild_Mage A")
+    wim2 = Wild_Mage("Wild_Mage B")
+
+    with open("tests_23_life", "a") as f:
+        print(f"Testing {rog1.name} vs {rog2.name}", file=f)
+        print(f"Testing {rog1.name} vs {rog2.name}")
+        test_one_hundred_thousand_games(rog1, rog2, output=f)
+        print(file=f)
+
+        print(f"Testing {war1.name} vs {war2.name}", file=f)
+        print(f"Testing {war1.name} vs {war2.name}")
+        test_one_hundred_thousand_games(war1, war2, output=f)
+        print(file=f)
+
+        print(f"Testing {stg1.name} vs {stg2.name}", file=f)
+        print(f"Testing {stg1.name} vs {stg2.name}")
+        test_one_hundred_thousand_games(stg1, stg2, output=f)
+        print(file=f)
+
+        print(f"Testing {msk1.name} vs {msk2.name}", file=f)
+        print(f"Testing {msk1.name} vs {msk2.name}")
+        test_one_hundred_thousand_games(msk1, msk2, output=f)
+        print(file=f)
+
+        print(f"Testing {brd1.name} vs {brd2.name}", file=f)
+        print(f"Testing {brd1.name} vs {brd2.name}")
+        test_one_hundred_thousand_games(brd1, brd2, output=f)
+        print(file=f)
+
+        print(f"Testing {gmb1.name} vs {gmb2.name}", file=f)
+        print(f"Testing {gmb1.name} vs {gmb2.name}")
+        test_one_hundred_thousand_games(gmb1, gmb2, output=f)
+        print(file=f)
+
+        print(f"Testing {frc1.name} vs {frc2.name}", file=f)
+        print(f"Testing {frc1.name} vs {frc2.name}")
+        test_one_hundred_thousand_games(frc1, frc2, output=f)
+        print(file=f)
+
+        print(f"Testing {pal1.name} vs {pal2.name}", file=f)
+        print(f"Testing {pal1.name} vs {pal2.name}")
+        test_one_hundred_thousand_games(pal1, pal2, output=f)
+        print(file=f)
+
+        print(f"Testing {par1.name} vs {par2.name}", file=f)
+        print(f"Testing {par1.name} vs {par2.name}")
+        test_one_hundred_thousand_games(par1, par2, output=f)
+        print(file=f)
+
+        print(f"Testing {shs1.name} vs {shs2.name}", file=f)
+        print(f"Testing {shs1.name} vs {shs2.name}")
+        test_one_hundred_thousand_games(shs1, shs2, output=f)
+        print(file=f)
+
+        print(f"Testing {dav1.name} vs {dav2.name}", file=f)
+        print(f"Testing {dav1.name} vs {dav2.name}")
+        test_one_hundred_thousand_games(dav1, dav2, output=f)
+        print(file=f)
+
+        print(f"Testing {wed1.name} vs {wed2.name}", file=f)
+        print(f"Testing {wed1.name} vs {wed2.name}")
+        test_one_hundred_thousand_games(wed1, wed2, output=f)
+        print(file=f)
+
+        print(f"Testing {bro1.name} vs {bro2.name}", file=f)
+        print(f"Testing {bro1.name} vs {bro2.name}")
+        test_one_hundred_thousand_games(bro1, bro2, output=f)
+        print(file=f)
+
+        print(f"Testing {spd1.name} vs {spd2.name}", file=f)
+        print(f"Testing {spd1.name} vs {spd2.name}")
+        test_one_hundred_thousand_games(spd1, spd2, output=f)
+        print(file=f)
+
+        print(f"Testing {wim1.name} vs {wim2.name}", file=f)
+        print(f"Testing {wim1.name} vs {wim2.name}")
+        test_one_hundred_thousand_games(wim1, wim2, output=f)
+        print(file=f)
+
+
+
+
+
+def fr():
+    frc = Forcer()
+    # print(we_de.calc_dmg())
+    print(test_one_hundred_thousand_times_turns(frc))
+
+
+# main()
+# mirrors()
+fr()
