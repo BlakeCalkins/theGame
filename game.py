@@ -1,6 +1,20 @@
 import random
-import statistics
 import sys
+
+def d2():
+    return random.randint(1, 2)
+def d4():
+    return random.randint(1, 4)
+def d6():
+    return random.randint(1, 6)
+def d8():
+    return random.randint(1, 8)
+def d10():
+    return random.randint(1, 10)
+def d12():
+    return random.randint(1, 12)
+def d20():
+    return random.randint(1, 20)
 
 class Archetype:
     def __init__(self):
@@ -21,21 +35,21 @@ class Rogue(Archetype):
         super().__init__()
         self.name = name
     def calc_dmg(self, turn=None):
-        return random.randint(1, 4) + random.randint(1, 4)
+        return d4() + d4()
     
 class Warrior(Archetype):
     def __init__(self, name="Warrior"):
         super().__init__()
         self.name = name
     def calc_dmg(self, turn=None):
-        return random.randint(1, 8) + 1
+        return d8() + 1
 
 class Strategist(Archetype):
     def __init__(self, name="Strategist"):
         super().__init__()
         self.name = name
     def calc_dmg(self, turn=None):
-            return max(random.randint(1, 6), random.randint(1, 6), random.randint(1, 6))
+            return max(d6(), d6(), d6())
     
 class Musketeer(Archetype):
     def __init__(self, name="Musketeer"):
@@ -43,7 +57,7 @@ class Musketeer(Archetype):
         self.name = name
     def calc_dmg(self, turn):
         if turn % 2 == 0:
-            return random.randint(1, 20)
+            return d20()
         if turn % 2 == 1:
             return 0
         
@@ -52,8 +66,8 @@ class Bard(Archetype):
         super().__init__()
         self.name = name
     def calc_dmg(self, turn=None):
-        a = random.randint(1, 20)
-        b = random.randint(1, 20)
+        a = d20()
+        b = d20()
         return max(0, abs(a-b) - 2)
     
 class Gambler(Archetype):
@@ -63,12 +77,12 @@ class Gambler(Archetype):
     def calc_dmg(self, turn=None):
         dmg_given = 0
         dmg_received = 0
-        roll = random.randint(1, 20)
+        roll = d20()
         if roll % 2 == 0:
             dmg_given += roll
         else: 
             dmg_received += roll
-        roll = random.randint(1, 20)
+        roll = d20()
         if roll % 2 == 0:
             dmg_given += roll
         else: 
@@ -83,7 +97,7 @@ class Forcer(Archetype):
     def calc_dmg(self, turn):
         sum = 0
         for i in range(turn+1):
-            if random.randint(1, 20) == 20:
+            if d20() == 20:
                 sum = 50
         return sum
     
@@ -93,7 +107,7 @@ class Paladin(Archetype):
         self.name = name
         self.default_life = 30
     def calc_dmg(self, turn=None):
-        return random.randint(1, 6) 
+        return d6()
 
 class Parasite(Archetype):
     def __init__(self, name="Parasite"):
@@ -102,7 +116,7 @@ class Parasite(Archetype):
     def heal(self, amt):
         self.life += amt
     def calc_dmg(self, turn=None):
-        dmg_gain = random.randint(1, 4)
+        dmg_gain = d4()
         self.heal(dmg_gain)
         return dmg_gain
 
@@ -126,13 +140,13 @@ class Weapons_Dealer(Archetype):
         self.name = name
     def calc_dmg(self, turn=None):
         arr = []
-        arr.append(random.randint(1, 2))
-        arr.append(random.randint(1, 4))
-        arr.append(random.randint(1, 6))
-        arr.append(random.randint(1, 8))
-        arr.append(random.randint(1, 10))
-        arr.append(random.randint(1, 12))
-        arr.append(random.randint(1, 20))
+        arr.append(d2())
+        arr.append(d4())
+        arr.append(d6())
+        arr.append(d8())
+        arr.append(d10())
+        arr.append(d12())
+        arr.append(d20())
         s_arr = sorted(arr)
         first_five = s_arr[:5]
         last_two = s_arr[-2:]
@@ -143,7 +157,7 @@ class Broker(Archetype):
         super().__init__()
         self.name = name
     def calc_dmg(self, turn):
-        return random.randint(1, 4) + turn
+        return d4() + turn
 
 class Speedster(Archetype):
     def __init__(self, name="Speedster"):
@@ -164,16 +178,16 @@ class Wild_Mage(Archetype):
         super().__init__()
         self.name = name
     def calc_dmg(self, turn=None):
-        roll = random.randint(1, 20)
+        roll = d20()
         if roll == 1:
-            self.take_dmg(random.randint(1, 4))
+            self.take_dmg(d4())
             return 0 
         elif 2 <= roll <= 7:
-            return random.randint(1, 4)
+            return d4()
         elif 8 <= roll <= 14:
-            return random.randint(1, 4) + random.randint(1, 4)
+            return d4() + d4()
         elif 15 <= roll <= 19:
-            return random.randint(1, 4) + random.randint(1, 4) + random.randint(1, 4)
+            return d4() + d4() + d4()
         else:
             return 50
         
