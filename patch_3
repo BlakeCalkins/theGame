@@ -1,1152 +1,1612 @@
 Testing Rogue vs Warrior
 Rogue first
-20416
+20705
 Warrior second
-29584
+29295
 Rogue second
-16442
+16110
 Warrior first
-33558
+33890
+Average Damage:
+5.35273997066822
+Average turns:
+4.47284
 
 Testing Rogue vs Strategist
 Rogue first
-26863
+27014
 Strategist second
-23137
+22986
 Rogue second
-23652
+23559
 Strategist first
-26348
+26441
+Average Damage:
+5.025401647546897
+Average turns:
+4.74643
 
 Testing Rogue vs Musketeer
 Rogue first
-29315
+29453
 Musketeer second
-20685
+20547
 Rogue second
-26465
+26293
 Musketeer first
-23535
+23707
+Average Damage:
+5.057462167138417
+Average turns:
+4.69968
 
 Testing Rogue vs Bard
 Rogue first
-28319
+28189
 Bard second
-21681
+21811
 Rogue second
-26110
+26202
 Bard first
-23890
+23798
+Average Damage:
+5.233187422660673
+Average turns:
+4.52715
 
 Testing Rogue vs Gambler
 Rogue first
-33163
+33333
 Gambler second
-16837
+16667
 Rogue second
-29046
+29086
 Gambler first
-20954
+20914
+Average Damage:
+9.130255595238095
+Average turns:
+2.28749
 
 Testing Rogue vs Forcer
 Rogue first
-25588
+25653
 Forcer second
-24412
+24347
 Rogue second
-21486
+21796
 Forcer first
-28514
+28204
+Average Damage:
+10.202921552808302
+Average turns:
+4.06643
 
 Testing Rogue vs Paladin
 Rogue first
-22048
+21820
 Paladin second
-27952
+28180
 Rogue second
-21469
+21562
 Paladin first
-28531
+28438
+Average Damage:
+4.300980860459801
+Average turns:
+6.44691
 
 Testing Rogue vs Parasite
 Rogue first
-30392
+30472
 Parasite second
-19608
+19528
 Rogue second
-27557
+27524
 Parasite first
-22443
+22476
+Average Damage:
+3.79450627127198
+Average turns:
+7.86345
 
 Testing Rogue vs Sharpshooter
 Rogue first
-23481
+23681
 Sharpshooter second
-26519
+26319
 Rogue second
-23823
+23564
 Sharpshooter first
-26177
+26436
+Average Damage:
+5.1227534541847035
+Average turns:
+4.62892
 
 Testing Rogue vs Dave_from_HR
 Rogue first
-15939
+16064
 Dave_from_HR second
-34061
+33936
 Rogue second
-28161
+28147
 Dave_from_HR first
-21839
+21853
+Average Damage:
+5.025474527777778
+Average turns:
+4.81116
 
 Testing Rogue vs Weapons_Dealer
 Rogue first
-26162
+26187
 Weapons_Dealer second
-23838
+23813
 Rogue second
-23989
+23991
 Weapons_Dealer first
-26011
+26009
+Average Damage:
+5.441383661172161
+Average turns:
+4.43
 
 Testing Rogue vs Broker
 Rogue first
-26710
+26824
 Broker second
-23290
+23176
 Rogue second
-21395
+21730
 Broker first
-28605
+28270
+Average Damage:
+5.056860902958152
+Average turns:
+4.72138
 
 Testing Rogue vs Speedster
 Rogue first
-28158
+28147
 Speedster second
-21842
+21853
 Rogue second
-28339
+28303
 Speedster first
-21661
+21697
+Average Damage:
+5.695897981712732
+Average turns:
+4.47236
 
 Testing Rogue vs Wild_Mage
 Rogue first
-26814
+26932
 Wild_Mage second
-23186
+23068
 Rogue second
-24199
+24133
 Wild_Mage first
-25801
+25867
+Average Damage:
+7.820824557109557
+Average turns:
+4.34233
 
 Testing Warrior vs Strategist
 Warrior first
-34272
+33990
 Strategist second
-15728
+16010
 Warrior second
-30475
+30347
 Strategist first
-19525
+19653
+Average Damage:
+5.322798111027861
+Average turns:
+4.50549
 
 Testing Warrior vs Musketeer
 Warrior first
-35101
+35114
 Musketeer second
-14899
+14886
 Warrior second
-30795
+30774
 Musketeer first
-19205
+19226
+Average Damage:
+5.2383656542901536
+Average turns:
+4.45645
 
 Testing Warrior vs Bard
 Warrior first
-31853
+32087
 Bard second
-18147
+17913
 Warrior second
-29526
+29429
 Bard first
-20474
+20571
+Average Damage:
+5.486862992632368
+Average turns:
+4.30561
 
 Testing Warrior vs Gambler
 Warrior first
-33668
+33902
 Gambler second
-16332
+16098
 Warrior second
-29613
+29511
 Gambler first
-20387
+20489
+Average Damage:
+9.350157630952381
+Average turns:
+2.26686
 
 Testing Warrior vs Forcer
 Warrior first
-27939
+28190
 Forcer second
-22061
+21810
 Warrior second
-23699
+23858
 Forcer first
-26301
+26142
+Average Damage:
+10.20393738861139
+Average turns:
+3.87714
 
 Testing Warrior vs Paladin
 Warrior first
-29365
+29324
 Paladin second
-20635
+20676
 Warrior second
-28547
+28551
 Paladin first
-21453
+21449
+Average Damage:
+4.583109887716429
+Average turns:
+6.13672
 
 Testing Warrior vs Parasite
 Warrior first
-37905
+37785
 Parasite second
-12095
+12215
 Warrior second
-35461
+35694
 Parasite first
-14539
+14306
+Average Damage:
+4.1241883583871
+Average turns:
+7.09997
 
 Testing Warrior vs Sharpshooter
 Warrior first
-30846
+30623
 Sharpshooter second
-19154
+19377
 Warrior second
-28932
+28711
 Sharpshooter first
-21068
+21289
+Average Damage:
+5.40391274059274
+Average turns:
+4.4005
 
 Testing Warrior vs Dave_from_HR
 Warrior first
-27313
+27179
 Dave_from_HR second
-22687
+22821
 Warrior second
-35072
+35162
 Dave_from_HR first
-14928
+14838
+Average Damage:
+5.3313142777777776
+Average turns:
+4.55647
 
 Testing Warrior vs Weapons_Dealer
 Warrior first
-30010
+30027
 Weapons_Dealer second
-19990
+19973
 Warrior second
-27106
+27167
 Weapons_Dealer first
-22894
+22833
+Average Damage:
+5.690504721689258
+Average turns:
+4.22241
 
 Testing Warrior vs Broker
 Warrior first
-33934
+34104
 Broker second
-16066
+15896
 Warrior second
-28912
+29151
 Broker first
-21088
+20849
+Average Damage:
+5.2821754585137075
+Average turns:
+4.48356
 
 Testing Warrior vs Speedster
 Warrior first
-32080
+32068
 Speedster second
-17920
+17932
 Warrior second
-30724
+30846
 Speedster first
-19276
+19154
+Average Damage:
+5.922847174381175
+Average turns:
+4.25315
 
 Testing Warrior vs Wild_Mage
 Warrior first
-30938
+31204
 Wild_Mage second
-19062
+18796
 Warrior second
-27907
+27821
 Wild_Mage first
-22093
+22179
+Average Damage:
+8.032128477217226
+Average turns:
+4.13164
 
 Testing Strategist vs Musketeer
 Strategist first
-27958
+27825
 Musketeer second
-22042
+22175
 Strategist second
-25802
+25606
 Musketeer first
-24198
+24394
+Average Damage:
+5.071295807831057
+Average turns:
+4.72459
 
 Testing Strategist vs Bard
 Strategist first
-28415
+28247
 Bard second
-21585
+21753
 Strategist second
-26360
+26459
 Bard first
-23640
+23541
+Average Damage:
+5.188704766150516
+Average turns:
+4.54875
 
 Testing Strategist vs Gambler
 Strategist first
-33293
+33194
 Gambler second
-16707
+16806
 Strategist second
-29011
+28933
 Gambler first
-20989
+21067
+Average Damage:
+9.117710285714287
+Average turns:
+2.28792
 
 Testing Strategist vs Forcer
 Strategist first
-25425
+25529
 Forcer second
-24575
+24471
 Strategist second
-21651
+21761
 Forcer first
-28349
+28239
+Average Damage:
+10.223689788100788
+Average turns:
+4.07524
 
 Testing Strategist vs Paladin
 Strategist first
-20848
+21244
 Paladin second
-29152
+28756
 Strategist second
-20901
+20542
 Paladin first
-29099
+29458
+Average Damage:
+4.271094030873538
+Average turns:
+6.4948
 
 Testing Strategist vs Parasite
 Strategist first
-30121
+29988
 Parasite second
-19879
+20012
 Strategist second
-26823
+27010
 Parasite first
-23177
+22990
+Average Damage:
+3.751592682970413
+Average turns:
+7.97962
 
 Testing Strategist vs Sharpshooter
 Strategist first
-21863
+22082
 Sharpshooter second
-28137
+27918
 Strategist second
-24269
+24126
 Sharpshooter first
-25731
+25874
+Average Damage:
+5.094191935092685
+Average turns:
+4.66373
 
 Testing Strategist vs Dave_from_HR
 Strategist first
-12597
+12474
 Dave_from_HR second
-37403
+37526
 Strategist second
-29528
+29374
 Dave_from_HR first
-20472
+20626
+Average Damage:
+4.990473670634921
+Average turns:
+4.87526
 
 Testing Strategist vs Weapons_Dealer
 Strategist first
-26075
+25973
 Weapons_Dealer second
-23925
+24027
 Strategist second
-24204
+23901
 Weapons_Dealer first
-25796
+26099
+Average Damage:
+5.412669015845265
+Average turns:
+4.44559
 
 Testing Strategist vs Broker
 Strategist first
-25969
+25947
 Broker second
-24031
+24053
 Strategist second
-21949
+21779
 Broker first
-28051
+28221
+Average Damage:
+5.027191434343434
+Average turns:
+4.76931
 
 Testing Strategist vs Speedster
 Strategist first
-27737
+27594
 Speedster second
-22263
+22406
 Strategist second
-28676
+28945
 Speedster first
-21324
+21055
+Average Damage:
+5.655845937923188
+Average turns:
+4.49802
 
 Testing Strategist vs Wild_Mage
 Strategist first
-26795
+26802
 Wild_Mage second
-23205
+23198
 Strategist second
-24412
+24249
 Wild_Mage first
-25588
+25751
+Average Damage:
+7.770429626290377
+Average turns:
+4.36298
 
 Testing Musketeer vs Bard
 Musketeer first
-24427
+24557
 Bard second
-25573
+25443
 Musketeer second
-22846
+22828
 Bard first
-27154
+27172
+Average Damage:
+5.22064780632619
+Average turns:
+4.65746
 
 Testing Musketeer vs Gambler
 Musketeer first
-32167
+32062
 Gambler second
-17833
+17938
 Musketeer second
-24889
+25069
 Gambler first
-25111
+24931
+Average Damage:
+8.508312468253967
+Average turns:
+2.35629
 
 Testing Musketeer vs Forcer
 Musketeer first
-22358
+22643
 Forcer second
-27642
+27357
 Musketeer second
-19135
+19063
 Forcer first
-30865
+30937
+Average Damage:
+10.151287024077634
+Average turns:
+4.20418
 
 Testing Musketeer vs Paladin
 Musketeer first
-21226
+21247
 Paladin second
-28774
+28753
 Musketeer second
-20584
+20712
 Paladin first
-29416
+29288
+Average Damage:
+4.363194317202628
+Average turns:
+6.29209
 
 Testing Musketeer vs Parasite
 Musketeer first
-29949
+30063
 Parasite second
-20051
+19937
 Musketeer second
-28372
+28205
 Parasite first
-21628
+21795
+Average Damage:
+4.024692323565415
+Average turns:
+7.44313
 
 Testing Musketeer vs Sharpshooter
 Musketeer first
-24304
+24255
 Sharpshooter second
-25696
+25745
 Musketeer second
-22139
+22054
 Sharpshooter first
-27861
+27946
+Average Damage:
+5.177339868505118
+Average turns:
+4.64845
 
 Testing Musketeer vs Dave_from_HR
 Musketeer first
-23644
+24062
 Dave_from_HR second
-26356
+25938
 Musketeer second
-28543
+28517
 Dave_from_HR first
-21457
+21483
+Average Damage:
+5.210093154761905
+Average turns:
+4.71084
 
 Testing Musketeer vs Weapons_Dealer
 Musketeer first
-22831
+22812
 Weapons_Dealer second
-27169
+27188
 Musketeer second
-21065
+21019
 Weapons_Dealer first
-28935
+28981
+Average Damage:
+5.3926954099842375
+Average turns:
+4.54706
 
 Testing Musketeer vs Broker
 Musketeer first
-23769
+23763
 Broker second
-26231
+26237
 Musketeer second
-22050
+21994
 Broker first
-27950
+28006
+Average Damage:
+5.092783257575758
+Average turns:
+4.69871
 
 Testing Musketeer vs Speedster
 Musketeer first
-26166
+26035
 Speedster second
-23834
+23965
 Musketeer second
-23357
+23195
 Speedster first
-26643
+26805
+Average Damage:
+5.65977114043678
+Average turns:
+4.59591
 
 Testing Musketeer vs Wild_Mage
 Musketeer first
-22799
+22748
 Wild_Mage second
-27201
+27252
 Musketeer second
-20540
+20522
 Wild_Mage first
-29460
+29478
+Average Damage:
+7.753352743966216
+Average turns:
+4.41136
 
 Testing Bard vs Gambler
 Bard first
-32437
+32318
 Gambler second
-17563
+17682
 Bard second
-28440
+28472
 Gambler first
-21560
+21528
+Average Damage:
+9.282138146825396
+Average turns:
+2.31055
 
 Testing Bard vs Forcer
 Bard first
-23789
+23618
 Forcer second
-26211
+26382
 Bard second
-20174
+20104
 Forcer first
-29826
+29896
+Average Damage:
+10.374948077154487
+Average turns:
+4.08393
 
 Testing Bard vs Paladin
 Bard first
-21123
+21211
 Paladin second
-28877
+28789
 Bard second
-20778
+20846
 Paladin first
-29222
+29154
+Average Damage:
+4.374527827105471
+Average turns:
+6.24082
 
 Testing Bard vs Parasite
 Bard first
-27482
+27720
 Parasite second
-22518
+22280
 Bard second
-26043
+26001
 Parasite first
-23957
+23999
+Average Damage:
+4.030327074810562
+Average turns:
+7.42175
 
 Testing Bard vs Sharpshooter
 Bard first
-23453
+23331
 Sharpshooter second
-26547
+26669
 Bard second
-21902
+22080
 Sharpshooter first
-28098
+27920
+Average Damage:
+5.288704721580534
+Average turns:
+4.48289
 
 Testing Bard vs Dave_from_HR
 Bard first
-19338
+19339
 Dave_from_HR second
-30662
+30661
 Bard second
-23485
+23365
 Dave_from_HR first
-26515
+26635
+Average Damage:
+5.173793853174604
+Average turns:
+4.5288
 
 Testing Bard vs Weapons_Dealer
 Bard first
-24185
+24171
 Weapons_Dealer second
-25815
+25829
 Bard second
-22346
+22283
 Weapons_Dealer first
-27654
+27717
+Average Damage:
+5.585927843406288
+Average turns:
+4.40287
 
 Testing Bard vs Broker
 Bard first
-23427
+23201
 Broker second
-26573
+26799
 Bard second
-20721
+20717
 Broker first
-29279
+29283
+Average Damage:
+5.171954001803752
+Average turns:
+4.51714
 
 Testing Bard vs Speedster
 Bard first
-26234
+26068
 Speedster second
-23766
+23932
 Bard second
-24836
+25102
 Speedster first
-25164
+24898
+Average Damage:
+5.843593392055594
+Average turns:
+4.47681
 
 Testing Bard vs Wild_Mage
 Bard first
-24069
+23630
 Wild_Mage second
-25931
+26370
 Bard second
-22025
+22076
 Wild_Mage first
-27975
+27924
+Average Damage:
+7.962060367027581
+Average turns:
+4.26512
 
 Testing Gambler vs Forcer
 Gambler first
-25330
+25389
 Forcer second
-24670
+24611
 Gambler second
-21256
+21178
 Forcer first
-28744
+28822
+Average Damage:
+11.563471658730158
+Average turns:
+2.40013
 
 Testing Gambler vs Paladin
 Gambler first
-15545
+15463
 Paladin second
-34455
+34537
 Gambler second
-12344
+12435
 Paladin first
-37656
+37565
+Average Damage:
+7.6578294880952384
+Average turns:
+2.64346
 
 Testing Gambler vs Parasite
 Gambler first
-21974
+21840
 Parasite second
-28026
+28160
 Gambler second
-17074
+17114
 Parasite first
-32926
+32886
+Average Damage:
+8.083818587301588
+Average turns:
+2.52471
 
 Testing Gambler vs Sharpshooter
 Gambler first
-21501
+21455
 Sharpshooter second
-28499
+28545
 Gambler second
-17199
+17272
 Sharpshooter first
-32801
+32728
+Average Damage:
+9.23080396825397
+Average turns:
+2.29859
 
 Testing Gambler vs Dave_from_HR
 Gambler first
-20606
+20840
 Dave_from_HR second
-29394
+29160
 Gambler second
-16638
+16851
 Dave_from_HR first
-33362
+33149
+Average Damage:
+9.174112738095237
+Average turns:
+2.2834
 
 Testing Gambler vs Weapons_Dealer
 Gambler first
-21364
+21354
 Weapons_Dealer second
-28636
+28646
 Gambler second
-17252
+17402
 Weapons_Dealer first
-32748
+32598
+Average Damage:
+9.432173944444445
+Average turns:
+2.29753
 
 Testing Gambler vs Broker
 Gambler first
-22478
+22688
 Broker second
-27522
+27312
 Gambler second
-18319
+18367
 Broker first
-31681
+31633
+Average Damage:
+8.670732952380952
+Average turns:
+2.33686
 
 Testing Gambler vs Speedster
 Gambler first
-21358
+21317
 Speedster second
-28642
+28683
 Gambler second
-17760
+17779
 Speedster first
-32240
+32221
+Average Damage:
+9.532611587301588
+Average turns:
+2.30807
 
 Testing Gambler vs Wild_Mage
 Gambler first
-20916
+20946
 Wild_Mage second
-29084
+29054
 Gambler second
-16657
+16447
 Wild_Mage first
-33343
+33553
+Average Damage:
+10.845711178571428
+Average turns:
+2.2515
 
 Testing Forcer vs Paladin
 Forcer first
-37556
+37409
 Paladin second
-12444
+12591
 Forcer second
-35485
+35358
 Paladin first
-14515
+14642
+Average Damage:
+10.450985398487305
+Average turns:
+4.68317
 
 Testing Forcer vs Parasite
 Forcer first
-45042
+44891
 Parasite second
-4958
+5109
 Forcer second
-44514
+44524
 Parasite first
-5486
+5476
+Average Damage:
+10.537411105218702
+Average turns:
+5.11554
 
 Testing Forcer vs Sharpshooter
 Forcer first
-28100
+28152
 Sharpshooter second
-21900
+21848
 Forcer second
-24532
+24804
 Sharpshooter first
-25468
+25196
+Average Damage:
+10.235303724246943
+Average turns:
+4.03759
 
 Testing Forcer vs Dave_from_HR
 Forcer first
-25761
+25796
 Dave_from_HR second
-24239
+24204
 Forcer second
-25699
+25681
 Dave_from_HR first
-24301
+24319
+Average Damage:
+10.158637896825397
+Average turns:
+4.0455
 
 Testing Forcer vs Weapons_Dealer
 Forcer first
-28511
+28658
 Weapons_Dealer second
-21489
+21342
 Forcer second
-25101
+24687
 Weapons_Dealer first
-24899
+25313
+Average Damage:
+10.343163973350794
+Average turns:
+3.99963
 
 Testing Forcer vs Broker
 Forcer first
-28014
+28427
 Broker second
-21986
+21573
 Forcer second
-23828
+24048
 Broker first
-26172
+25952
+Average Damage:
+10.147882204184704
+Average turns:
+4.03563
 
 Testing Forcer vs Speedster
 Forcer first
-29959
+30014
 Speedster second
-20041
+19986
 Forcer second
-26366
+26304
 Speedster first
-23634
+23696
+Average Damage:
+10.692505562266287
+Average turns:
+4.06046
 
 Testing Forcer vs Wild_Mage
 Forcer first
-27551
+27498
 Wild_Mage second
-22449
+22502
 Forcer second
-23131
+23490
 Wild_Mage first
-26869
+26510
+Average Damage:
+12.446001130486042
+Average turns:
+3.89767
 
 Testing Paladin vs Parasite
 Paladin first
-11805
+11894
 Parasite second
-38195
+38106
 Paladin second
-10838
+10955
 Parasite first
-39162
+39045
+Average Damage:
+3.0235126973534783
+Average turns:
+12.57328
 
 Testing Paladin vs Sharpshooter
 Paladin first
-26732
+26947
 Sharpshooter second
-23268
+23053
 Paladin second
-27035
+26899
 Sharpshooter first
-22965
+23101
+Average Damage:
+4.35582152984872
+Average turns:
+6.30531
 
 Testing Paladin vs Dave_from_HR
 Paladin first
-22627
+22869
 Dave_from_HR second
-27373
+27131
 Paladin second
-31930
+31925
 Dave_from_HR first
-18070
+18075
+Average Damage:
+4.281884563464313
+Average turns:
+6.50843
 
 Testing Paladin vs Weapons_Dealer
 Paladin first
-26451
+26368
 Weapons_Dealer second
-23549
+23632
 Paladin second
-26409
+26261
 Weapons_Dealer first
-23591
+23739
+Average Damage:
+4.579543688328912
+Average turns:
+6.09356
 
 Testing Paladin vs Broker
 Paladin first
-19440
+19407
 Broker second
-30560
+30593
 Paladin second
-15416
+15489
 Broker first
-34584
+34511
+Average Damage:
+4.665482206154956
+Average turns:
+6.09816
 
 Testing Paladin vs Speedster
 Paladin first
-28855
+28887
 Speedster second
-21145
+21113
 Paladin second
-28908
+28985
 Speedster first
-21092
+21015
+Average Damage:
+4.715618209847359
+Average turns:
+6.1051
 
 Testing Paladin vs Wild_Mage
 Paladin first
-26041
+26290
 Wild_Mage second
-23959
+23710
 Paladin second
-25859
+25604
 Wild_Mage first
-24141
+24396
+Average Damage:
+7.350364416054878
+Average turns:
+5.67451
 
 Testing Parasite vs Sharpshooter
 Parasite first
-22221
+22218
 Sharpshooter second
-27779
+27782
 Parasite second
-20091
+20088
 Sharpshooter first
-29909
+29912
+Average Damage:
+3.896271681294728
+Average turns:
+7.5898
 
 Testing Parasite vs Dave_from_HR
 Parasite first
-22136
+21917
 Dave_from_HR second
-27864
+28083
 Parasite second
-18503
+18493
 Dave_from_HR first
-31497
+31507
+Average Damage:
+3.7565563262913564
+Average turns:
+7.99863
 
 Testing Parasite vs Weapons_Dealer
 Parasite first
-20847
+21170
 Weapons_Dealer second
-29153
+28830
 Parasite second
-19422
+19380
 Weapons_Dealer first
-30578
+30620
+Average Damage:
+4.270938960833072
+Average turns:
+7.11256
 
 Testing Parasite vs Broker
 Parasite first
-3964
+3962
 Broker second
-46036
+46038
 Parasite second
-2282
+2174
 Broker first
-47718
+47826
+Average Damage:
+4.361478209165834
+Average turns:
+6.67204
 
 Testing Parasite vs Speedster
 Parasite first
-24086
+24091
 Speedster second
-25914
+25909
 Parasite second
-22775
+22859
 Speedster first
-27225
+27141
+Average Damage:
+4.563905338008951
+Average turns:
+7.26032
 
 Testing Parasite vs Wild_Mage
 Parasite first
-20756
+20750
 Wild_Mage second
-29244
+29250
 Parasite second
-19396
+19488
 Wild_Mage first
-30604
+30512
+Average Damage:
+7.094698882172997
+Average turns:
+6.73438
 
 Testing Sharpshooter vs Dave_from_HR
 Sharpshooter first
-15627
+15635
 Dave_from_HR second
-34373
+34365
 Sharpshooter second
-34249
+34415
 Dave_from_HR first
-15751
+15585
+Average Damage:
+5.093746880952381
+Average turns:
+4.7168
 
 Testing Sharpshooter vs Weapons_Dealer
 Sharpshooter first
-26257
+26328
 Weapons_Dealer second
-23743
+23672
 Sharpshooter second
-24454
+24546
 Weapons_Dealer first
-25546
+25454
+Average Damage:
+5.485236325757447
+Average turns:
+4.39129
 
 Testing Sharpshooter vs Broker
 Sharpshooter first
-26090
+25891
 Broker second
-23910
+24109
 Sharpshooter second
-27234
+27197
 Broker first
-22766
+22803
+Average Damage:
+5.089369743506494
+Average turns:
+4.64738
 
 Testing Sharpshooter vs Speedster
 Sharpshooter first
-27917
+27810
 Speedster second
-22083
+22190
 Sharpshooter second
-27779
+27666
 Speedster first
-22221
+22334
+Average Damage:
+5.754181430672612
+Average turns:
+4.42594
 
 Testing Sharpshooter vs Wild_Mage
 Sharpshooter first
-26236
+26345
 Wild_Mage second
-23764
+23655
 Sharpshooter second
-25001
+25006
 Wild_Mage first
-24999
+24994
+Average Damage:
+7.865512194333444
+Average turns:
+4.29182
 
 Testing Dave_from_HR vs Weapons_Dealer
 Dave_from_HR first
-24232
+23964
 Weapons_Dealer second
-25768
+26036
 Dave_from_HR second
-28218
+28134
 Weapons_Dealer first
-21782
+21866
+Average Damage:
+5.409567634920635
+Average turns:
+4.42919
 
 Testing Dave_from_HR vs Broker
 Dave_from_HR first
-20797
+20662
 Broker second
-29203
+29338
 Dave_from_HR second
-37088
+37243
 Broker first
-12912
+12757
+Average Damage:
+5.011645793650794
+Average turns:
+4.87243
 
 Testing Dave_from_HR vs Speedster
 Dave_from_HR first
-25106
+24841
 Speedster second
-24894
+25159
 Dave_from_HR second
-31814
+31862
 Speedster first
-18186
+18138
+Average Damage:
+5.641736936507936
+Average turns:
+4.45849
 
 Testing Dave_from_HR vs Wild_Mage
 Dave_from_HR first
-24841
+25011
 Wild_Mage second
-25159
+24989
 Dave_from_HR second
-29499
+29233
 Wild_Mage first
-20501
+20767
+Average Damage:
+7.745734055555556
+Average turns:
+4.38009
 
 Testing Weapons_Dealer vs Broker
 Weapons_Dealer first
-25808
+25617
 Broker second
-24192
+24383
 Weapons_Dealer second
-22921
+22952
 Broker first
-27079
+27048
+Average Damage:
+5.366759402958152
+Average turns:
+4.42043
 
 Testing Weapons_Dealer vs Speedster
 Weapons_Dealer first
-28000
+27729
 Speedster second
-22000
+22271
 Weapons_Dealer second
-26214
+26221
 Speedster first
-23786
+23779
+Average Damage:
+6.0352004331788605
+Average turns:
+4.36312
 
 Testing Weapons_Dealer vs Wild_Mage
 Weapons_Dealer first
-25565
+25579
 Wild_Mage second
-24435
+24421
 Weapons_Dealer second
-23686
+23697
 Wild_Mage first
-26314
+26303
+Average Damage:
+8.075810269139659
+Average turns:
+4.16985
 
 Testing Broker vs Speedster
 Broker first
-28290
+28447
 Speedster second
-21710
+21553
 Broker second
-28970
+29086
 Speedster first
-21030
+20914
+Average Damage:
+5.623027474747475
+Average turns:
+4.46487
 
 Testing Broker vs Wild_Mage
 Broker first
-27990
+27748
 Wild_Mage second
-22010
+22252
 Broker second
-24514
+24494
 Wild_Mage first
-25486
+25506
+Average Damage:
+7.7423993264790765
+Average turns:
+4.35274
 
 Testing Speedster vs Wild_Mage
 Speedster first
-22607
+22788
 Wild_Mage second
-27393
+27212
 Speedster second
-21689
+21676
 Wild_Mage first
-28311
+28324
+Average Damage:
+8.352893995713952
+Average turns:
+4.23116
 
 Testing Rogue A vs Rogue B
 Rogue A first
-27039
+26983
 Rogue B second
-22961
+23017
 Rogue A second
-23005
+23048
 Rogue B first
-26995
+26952
+Average Damage:
+5.058065875457876
+Average turns:
+4.71198
 
 Testing Warrior A vs Warrior B
 Warrior A first
-27545
+27345
 Warrior B second
-22455
+22655
 Warrior A second
-22649
+22668
 Warrior B first
-27351
+27332
+Average Damage:
+5.620245187118438
+Average turns:
+4.28273
 
 Testing Strategist A vs Strategist B
 Strategist A first
-25962
+25985
 Strategist B second
-24038
+24015
 Strategist A second
-23955
+24125
 Strategist B first
-26045
+25875
+Average Damage:
+4.988001770562771
+Average turns:
+4.7906
 
 Testing Musketeer A vs Musketeer B
 Musketeer A first
-31067
+30898
 Musketeer B second
-18933
+19102
 Musketeer A second
-18884
+18952
 Musketeer B first
-31116
+31048
+Average Damage:
+5.076521642926486
+Average turns:
+4.77232
 
 Testing Bard A vs Bard B
 Bard A first
-25765
+25791
 Bard B second
-24235
+24209
 Bard A second
-24223
+24454
 Bard B first
-25777
+25546
+Average Damage:
+5.400968978306334
+Average turns:
+4.509
 
 Testing Gambler A vs Gambler B
 Gambler A first
-28778
+28841
 Gambler B second
-21222
+21159
 Gambler A second
-21291
+21171
 Gambler B first
-28709
+28829
+Average Damage:
+12.474225333333331
+Average turns:
+1.93065
 
 Testing Forcer A vs Forcer B
 Forcer A first
-27768
+27842
 Forcer B second
-22232
+22158
 Forcer A second
-22205
+22290
 Forcer B first
-27795
+27710
+Average Damage:
+14.324814118330139
+Average turns:
+3.72222
 
 Testing Paladin A vs Paladin B
 Paladin A first
-24132
+24548
 Paladin B second
-25868
+25452
 Paladin A second
-25636
+25632
 Paladin B first
-24364
+24368
+Average Damage:
+3.547054507437698
+Average turns:
+8.99567
 
 Testing Parasite A vs Parasite B
 Parasite A first
-25406
+25174
 Parasite B second
-24594
+24826
 Parasite A second
-24681
+24758
 Parasite B first
-25319
+25242
+Average Damage:
+2.500512871471911
+Average turns:
+163.91044
 
 Testing Sharpshooter A vs Sharpshooter B
 Sharpshooter A first
-23432
+23449
 Sharpshooter B second
-26568
+26551
 Sharpshooter A second
-26843
+26699
 Sharpshooter B first
-23157
+23301
+Average Damage:
+5.188342150981372
+Average turns:
+4.56589
 
 Testing Dave Kinkade vs Dave Calkins
 Dave Kinkade first
@@ -1157,44 +1617,64 @@ Dave Kinkade second
 50000
 Dave Calkins first
 0
+Average Damage:
+5.0
+Average turns:
+5.0
 
 Testing Weapons_Dealer A vs Weapons_Dealer B
 Weapons_Dealer A first
-26006
+25778
 Weapons_Dealer B second
-23994
+24222
 Weapons_Dealer A second
-23790
+24096
 Weapons_Dealer B first
-26210
+25904
+Average Damage:
+5.788967526969106
+Average turns:
+4.29676
 
 Testing Broker A vs Broker B
 Broker A first
-28067
+28176
 Broker B second
-21933
+21824
 Broker A second
-21908
+21694
 Broker B first
-28092
+28306
+Average Damage:
+5.057429182539682
+Average turns:
+4.74396
 
 Testing Speedster A vs Speedster B
 Speedster A first
-25357
+25492
 Speedster B second
-24643
+24508
 Speedster A second
-24659
+24430
 Speedster B first
-25341
+25570
+Average Damage:
+6.30707283954656
+Average turns:
+4.42672
 
 Testing Wild_Mage A vs Wild_Mage B
 Wild_Mage A first
-26150
+26127
 Wild_Mage B second
-23850
+23873
 Wild_Mage A second
-23805
+23781
 Wild_Mage B first
-26195
+26219
+Average Damage:
+10.322597501221
+Average turns:
+4.07471
 

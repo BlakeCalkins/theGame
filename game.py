@@ -1,4 +1,5 @@
 import random
+import numpy as np
 import sys
 
 def d2():
@@ -195,6 +196,7 @@ class Wild_Mage(Archetype):
 def run_game(archetype_a, archetype_b, verbose=True):
     archetype_b.life += 2
     turn = 1
+    damages = []
     if verbose:
         print(f"{archetype_a.name}'s life is {archetype_a.life}")
         print(f"{archetype_b.name}'s life is {archetype_b.life}")
@@ -202,6 +204,7 @@ def run_game(archetype_a, archetype_b, verbose=True):
         if verbose:
             print(f"turn {turn}:")
         a_dmg = archetype_a.calc_dmg(turn)
+        damages.append(a_dmg)
         if verbose:
             print(f"{archetype_a.name} deals {a_dmg} to {archetype_b.name}.")
         archetype_b.take_dmg(a_dmg)
@@ -210,6 +213,7 @@ def run_game(archetype_a, archetype_b, verbose=True):
         if verbose:
             print(f"{archetype_b.name}'s life is now {archetype_b.life}")
         b_dmg = archetype_b.calc_dmg(turn)
+        damages.append(b_dmg)
         if verbose:
             print(f"{archetype_b.name} deals {b_dmg} to {archetype_a.name}")
         archetype_a.take_dmg(b_dmg)
@@ -221,29 +225,29 @@ def run_game(archetype_a, archetype_b, verbose=True):
             print(f"{archetype_b.name} wins!")
         archetype_a.reset_life()
         archetype_b.reset_life()
-        return 1
+        return 1, np.mean(damages), turn
     elif archetype_b.life <= 0 and archetype_a.life > 0:
         if verbose:
             print(f"{archetype_a.name} wins!") 
         archetype_a.reset_life()
         archetype_b.reset_life()
-        return 0
+        return 0, np.mean(damages), turn
     else:
         if verbose:
             print(f"{archetype_a.name} wins!")
         archetype_a.reset_life()
         archetype_b.reset_life()
-        return 0
+        return 0, np.mean(damages), turn
 
 def test_one_hundred_thousand_times(which_class):
     sum = 0
-    for i in range(100000):
+    for _ in range(100000):
         sum += which_class.calc_dmg()
     return sum / 100000
 
 def test_one_hundred_thousand_times_turns(which_class):
     sum = 0
-    for i in range(100000):
+    for _ in range(100000):
         sum += num_turns(which_class)
     return sum / 100000
 
@@ -259,8 +263,13 @@ def num_turns(which_class):
 def test_one_hundred_thousand_games(a_a, a_b, output=sys.stdout):
     first_half_wins_a = 0
     first_half_wins_b = 0
-    for i in range(50000):
-        if run_game(a_a, a_b, verbose=False) == 0:
+    damages = []
+    turns = []
+    for _ in range(50000):
+        win, dmg, trn = run_game(a_a, a_b, verbose=False)
+        damages.append(dmg)
+        turns.append(trn)
+        if win == 0:
             first_half_wins_a += 1
         else:
             first_half_wins_b += 1
@@ -270,8 +279,11 @@ def test_one_hundred_thousand_games(a_a, a_b, output=sys.stdout):
     print(f"{first_half_wins_b}", file=output)
     second_half_wins_a = 0
     second_half_wins_b = 0
-    for i in range (50000):
-        if run_game(a_b, a_a, verbose=False) == 0:
+    for _ in range (50000):
+        win, dmg, trn = run_game(a_b, a_a, verbose=False)
+        damages.append(dmg)
+        turns.append(trn)
+        if win == 0:
             second_half_wins_b += 1
         else:
             second_half_wins_a += 1
@@ -279,6 +291,10 @@ def test_one_hundred_thousand_games(a_a, a_b, output=sys.stdout):
     print(f"{second_half_wins_a}", file=output)
     print(f"{a_b.name} first", file=output)
     print(f"{second_half_wins_b}", file=output)
+    print("Average Damage:", file=output)
+    print(np.mean(damages), file=output)
+    print("Average turns:", file=output)
+    print(np.mean(turns), file=output)
 
 def main(): 
     # print("rogue: ", test_one_hundred_thousand_times(rogue))
