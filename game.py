@@ -89,8 +89,12 @@ class Gambler(Archetype):
         #     dmg_given += roll
         # else: 
         #     dmg_received += roll
-        self.take_dmg(d4())
-        return d12()
+        flip = d2()
+        if flip == 1:
+            self.take_dmg(50)
+            return 0
+        else:
+            return 50
     
 class Forcer(Archetype):
     def __init__(self, name="Forcer"):
@@ -353,7 +357,7 @@ def main():
     wim = Wild_Mage()
     archetypes = [rog, war, stg, msk, brd, gmb, frc, pal, acd, shs, dav, wed, bro, spd, wim]
     matchups = 0
-    with open("patch_9", "w") as f:
+    with open("patch_10", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
@@ -401,7 +405,7 @@ def mirrors():
     wim1 = Wild_Mage("Wild_Mage A")
     wim2 = Wild_Mage("Wild_Mage B")
 
-    with open("patch_9", "a") as f:
+    with open("patch_10", "a") as f:
         print(f"Testing {rog1.name} vs {rog2.name}", file=f)
         print(f"Testing {rog1.name} vs {rog2.name}")
         test_one_hundred_thousand_games(rog1, rog2, output=f)
