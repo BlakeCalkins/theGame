@@ -298,10 +298,10 @@ def test_one_hundred_thousand_games(a_a, a_b, output=sys.stdout):
     print(f"{second_half_wins_a}", file=output)
     print(f"{a_b.name} first", file=output)
     print(f"{second_half_wins_b}", file=output)
-    print("Average Damage:", file=output)
-    print(np.mean(damages), file=output)
-    print("Average turns:", file=output)
-    print(np.mean(turns), file=output)
+    # print("Average Damage:", file=output)
+    # print(np.mean(damages), file=output)
+    # print("Average turns:", file=output)
+    # print(np.mean(turns), file=output)
 
 def archetype_averages():
     rog = Rogue()
