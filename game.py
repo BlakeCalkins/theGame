@@ -110,16 +110,23 @@ class Paladin(Archetype):
     def calc_dmg(self, turn=None):
         return d6()
 
-class Parasite(Archetype):
+class Academic(Archetype):
     def __init__(self, name="Parasite"):
         super().__init__()
         self.name = name
-    def heal(self, amt):
-        self.life += amt
-    def calc_dmg(self, turn=None):
-        dmg_gain = d4()
-        self.heal(dmg_gain)
-        return dmg_gain
+    def calc_dmg(self, turn):
+        if turn == 1:
+            return d4()
+        if turn == 2:
+            return d6()
+        if turn == 3:
+            return d8()
+        if turn == 4:
+            return d10()
+        if turn == 5:
+            return d12()
+        else:
+            return d20()
 
 class Sharpshooter(Archetype):
     def __init__(self, name="Sharpshooter"):
@@ -305,7 +312,7 @@ def archetype_averages():
     gmb = Gambler()
     frc = Forcer()
     pal = Paladin()
-    par = Parasite()
+    acd = Academic()
     shs = Sharpshooter()
     dav = Dave_from_HR()
     wed = Weapons_Dealer()
@@ -321,7 +328,7 @@ def archetype_averages():
     # print("gambler_dmg_received: ", test_one_hundred_thousand_times(gambler_dmg_received))
     print("forcer turns: ", test_one_hundred_thousand_times_turns(frc))
     print("paladin turns: ", test_one_hundred_thousand_times_turns(pal))
-    print("parasite: ", test_one_hundred_thousand_times(par))
+    print("academic: ", test_one_hundred_thousand_times(acd))
     print("sharpshooter: ", test_one_hundred_thousand_times(shs))
     print("dave_from_human_resources: ", test_one_hundred_thousand_times(dav))
     print("weapons_dealer: ", test_one_hundred_thousand_times(wed))
@@ -338,16 +345,16 @@ def main():
     gmb = Gambler()
     frc = Forcer()
     pal = Paladin()
-    par = Parasite()
+    acd = Academic()
     shs = Sharpshooter()
     dav = Dave_from_HR()
     wed = Weapons_Dealer()
     bro = Broker()
     spd = Speedster()
     wim = Wild_Mage()
-    archetypes = [rog, war, stg, msk, brd, gmb, frc, pal, par, shs, dav, wed, bro, spd, wim]
+    archetypes = [rog, war, stg, msk, brd, gmb, frc, pal, acd, shs, dav, wed, bro, spd, wim]
     matchups = 0
-    with open("patch_3", "w") as f:
+    with open("patch_4", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
@@ -380,8 +387,8 @@ def mirrors():
     frc2 = Forcer("Forcer B")
     pal1 = Paladin("Paladin A")
     pal2 = Paladin("Paladin B")
-    par1 = Parasite("Parasite A")
-    par2 = Parasite("Parasite B")
+    acd1 = Academic("Academic A")
+    acd2 = Academic("Academic B")
     shs1 = Sharpshooter("Sharpshooter A")
     shs2 = Sharpshooter("Sharpshooter B")
     dav1 = Dave_from_HR("Dave Kinkade")
@@ -395,7 +402,7 @@ def mirrors():
     wim1 = Wild_Mage("Wild_Mage A")
     wim2 = Wild_Mage("Wild_Mage B")
 
-    with open("patch_3", "a") as f:
+    with open("patch_4", "a") as f:
         print(f"Testing {rog1.name} vs {rog2.name}", file=f)
         print(f"Testing {rog1.name} vs {rog2.name}")
         test_one_hundred_thousand_games(rog1, rog2, output=f)
@@ -436,9 +443,9 @@ def mirrors():
         test_one_hundred_thousand_games(pal1, pal2, output=f)
         print(file=f)
 
-        print(f"Testing {par1.name} vs {par2.name}", file=f)
-        print(f"Testing {par1.name} vs {par2.name}")
-        test_one_hundred_thousand_games(par1, par2, output=f)
+        print(f"Testing {acd1.name} vs {acd2.name}", file=f)
+        print(f"Testing {acd1.name} vs {acd2.name}")
+        test_one_hundred_thousand_games(acd1, acd2, output=f)
         print(file=f)
 
         print(f"Testing {shs1.name} vs {shs2.name}", file=f)
