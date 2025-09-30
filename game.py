@@ -77,20 +77,20 @@ class Gambler(Archetype):
         super().__init__()
         self.name = name
     def calc_dmg(self, turn=None):
-        dmg_given = 0
-        dmg_received = 0
-        roll = d20()
-        if roll % 2 == 0:
-            dmg_given += roll
-        else: 
-            dmg_received += roll
-        roll = d20()
-        if roll % 2 == 0:
-            dmg_given += roll
-        else: 
-            dmg_received += roll
-        self.take_dmg(dmg_received)
-        return dmg_given
+        # dmg_given = 0
+        # dmg_received = 0
+        # roll = d20()
+        # if roll % 2 == 0:
+        #     dmg_given += roll
+        # else: 
+        #     dmg_received += roll
+        # roll = d20()
+        # if roll % 2 == 0:
+        #     dmg_given += roll
+        # else: 
+        #     dmg_received += roll
+        self.take_dmg(d6())
+        return d10()
     
 class Forcer(Archetype):
     def __init__(self, name="Forcer"):
@@ -98,7 +98,7 @@ class Forcer(Archetype):
         self.name = name
     def calc_dmg(self, turn):
         sum = 0
-        for i in range(turn+1):
+        for i in range(turn):
             if d20() == 20:
                 sum = 50
         return sum
@@ -353,7 +353,7 @@ def main():
     wim = Wild_Mage()
     archetypes = [rog, war, stg, msk, brd, gmb, frc, pal, acd, shs, dav, wed, bro, spd, wim]
     matchups = 0
-    with open("patch_5", "w") as f:
+    with open("patch_6", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
@@ -401,7 +401,7 @@ def mirrors():
     wim1 = Wild_Mage("Wild_Mage A")
     wim2 = Wild_Mage("Wild_Mage B")
 
-    with open("patch_5", "a") as f:
+    with open("patch_6", "a") as f:
         print(f"Testing {rog1.name} vs {rog2.name}", file=f)
         print(f"Testing {rog1.name} vs {rog2.name}")
         test_one_hundred_thousand_games(rog1, rog2, output=f)
