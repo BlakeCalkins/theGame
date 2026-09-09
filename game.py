@@ -71,30 +71,7 @@ class Bard(Archetype):
         a = d20()
         b = d20()
         return max(0, abs(a-b) - 2)
-    
-class Gambler(Archetype):
-    def __init__(self, name="Gambler"):
-        super().__init__()
-        self.name = name
-    def calc_dmg(self, turn=None):
-        # dmg_given = 0
-        # dmg_received = 0
-        # roll = d20()
-        # if roll % 2 == 0:
-        #     dmg_given += roll
-        # else: 
-        #     dmg_received += roll
-        # roll = d20()
-        # if roll % 2 == 0:
-        #     dmg_given += roll
-        # else: 
-        #     dmg_received += roll
-        flip = d2()
-        if flip == 1:
-            self.take_dmg(50)
-            return 0
-        else:
-            return 50
+
     
 class Forcer(Archetype):
     def __init__(self, name="Forcer"):
@@ -145,30 +122,6 @@ class Dave_from_HR(Archetype):
     def calc_dmg(self, turn=None):
         return 5
 
-class Weapons_Dealer(Archetype):
-    def __init__(self, name="Weapons_Dealer"):
-        super().__init__()
-        self.name = name
-    def calc_dmg(self, turn=None):
-        arr = []
-        arr.append(d2())
-        arr.append(d4())
-        arr.append(d6())
-        arr.append(d8())
-        arr.append(d10())
-        arr.append(d12())
-        arr.append(d20())
-        s_arr = sorted(arr)
-        first_five = s_arr[:5]
-        last_two = s_arr[-2:]
-        return max(0, (sum(last_two) - sum(first_five)))
-
-class Broker(Archetype):
-    def __init__(self, name="Broker"):
-        super().__init__()
-        self.name = name
-    def calc_dmg(self, turn):
-        return d4() + turn
 
 class Speedster(Archetype):
     def __init__(self, name="Speedster"):
@@ -228,6 +181,18 @@ class Werewolf(Archetype):
             if d4() == 4:
                 self.werewolf = True
             return d8()
+
+class Needler(Archetype):
+    def __init__(self, name="Needler"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn=None):
+        dmg = 0
+        for _ in range(12):
+            if d6() == 1 or d6() == 2:
+                dmg += 1
+        return dmg
+
         
     
 def run_game(archetype_a, archetype_b, verbose=True):
