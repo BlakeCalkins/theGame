@@ -116,7 +116,7 @@ class Paladin(Archetype):
         return d6()
 
 class Academic(Archetype):
-    def __init__(self, name="Parasite"):
+    def __init__(self, name="Academic"):
         super().__init__()
         self.name = name
     def calc_dmg(self, turn):
@@ -201,6 +201,33 @@ class Wild_Mage(Archetype):
             return d4() + d4() + d4()
         else:
             return 50
+
+class Irradiated(Archetype):
+    def __init__(self, name="Irradiated"):
+        super().__init__()
+        self.name = name
+    def calc_dmg(self, turn):
+        if turn == 1:
+            return d4() + d4() + d4() + d4() + d4()
+        if turn == 2:
+            return d4() + d4() + d4()
+        if turn == 3:
+            return d4() + d4()
+        else:
+            return d4()
+
+class Werewolf(Archetype):
+    def __init__(self, name="Werewolf"):
+        super().__init__()
+        self.name = name
+        self.werewolf = False
+    def calc_dmg(self, turn=None):
+        if self.werewolf:
+            return d12()
+        else:
+            if d4() == 4:
+                self.werewolf = True
+            return d8()
         
     
 def run_game(archetype_a, archetype_b, verbose=True):
