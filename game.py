@@ -161,10 +161,8 @@ class Irradiated(Archetype):
         self.name = name
     def calc_dmg(self, turn):
         if turn == 1:
-            return d4() + d4() + d4() + d4() + d4()
+            return d4() + d4() + d4() + d4()
         if turn == 2:
-            return d4() + d4() + d4()
-        if turn == 3:
             return d4() + d4()
         else:
             return d4()
@@ -180,7 +178,7 @@ class Werewolf(Archetype):
         else:
             if d4() == 4:
                 self.werewolf = True
-            return d8()
+            return d6()
 
 class Needler(Archetype):
     def __init__(self, name="Needler"):
@@ -188,7 +186,7 @@ class Needler(Archetype):
         self.name = name
     def calc_dmg(self, turn=None):
         dmg = 0
-        for _ in range(12):
+        for _ in range(16):
             if d6() == 1 or d6() == 2:
                 dmg += 1
         return dmg
@@ -347,9 +345,9 @@ def main():
     ndl = Needler()
     wer = Werewolf()
     rad = Irradiated()
-    archetypes = [rog, war, stg, msk, brd, frc, pal, acd, shs, dav, ndl, wer, rad, spd, wim]
+    archetypes = [rog, war, stg, msk, brd, ndl, frc, pal, acd, shs, dav, wer, rad, spd, wim]
     matchups = 0
-    with open("patch_12", "w") as f:
+    with open("patch_13", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
@@ -397,7 +395,7 @@ def mirrors():
     wer1 = Werewolf("Werewolf A")
     wer2 = Werewolf("Werewolf B")
 
-    with open("patch_10", "a") as f:
+    with open("patch_13", "a") as f:
         print(f"Testing {rog1.name} vs {rog2.name}", file=f)
         print(f"Testing {rog1.name} vs {rog2.name}")
         test_one_hundred_thousand_games(rog1, rog2, output=f)
@@ -421,6 +419,11 @@ def mirrors():
         print(f"Testing {brd1.name} vs {brd2.name}", file=f)
         print(f"Testing {brd1.name} vs {brd2.name}")
         test_one_hundred_thousand_games(brd1, brd2, output=f)
+        print(file=f)
+
+        print(f"Testing {ndl1.name} vs {ndl2.name}", file=f)
+        print(f"Testing {ndl1.name} vs {ndl2.name}")
+        test_one_hundred_thousand_games(ndl1, ndl2, output=f)
         print(file=f)
 
         print(f"Testing {frc1.name} vs {frc2.name}", file=f)
@@ -448,6 +451,16 @@ def mirrors():
         test_one_hundred_thousand_games(dav1, dav2, output=f)
         print(file=f)
 
+        print(f"Testing {wer1.name} vs {wer2.name}", file=f)
+        print(f"Testing {wer1.name} vs {wer2.name}")
+        test_one_hundred_thousand_games(wer1, wer2, output=f)
+        print(file=f)
+
+        print(f"Testing {rad1.name} vs {rad2.name}", file=f)
+        print(f"Testing {rad1.name} vs {rad2.name}")
+        test_one_hundred_thousand_games(rad1, rad2, output=f)
+        print(file=f)
+
         print(f"Testing {spd1.name} vs {spd2.name}", file=f)
         print(f"Testing {spd1.name} vs {spd2.name}")
         test_one_hundred_thousand_games(spd1, spd2, output=f)
@@ -458,20 +471,7 @@ def mirrors():
         test_one_hundred_thousand_games(wim1, wim2, output=f)
         print(file=f)
 
-        print(f"Testing {rad1.name} vs {rad2.name}", file=f)
-        print(f"Testing {rad1.name} vs {rad2.name}")
-        test_one_hundred_thousand_games(rad1, rad2, output=f)
-        print(file=f)
 
-        print(f"Testing {ndl1.name} vs {ndl2.name}", file=f)
-        print(f"Testing {ndl1.name} vs {ndl2.name}")
-        test_one_hundred_thousand_games(ndl1, ndl2, output=f)
-        print(file=f)
-
-        print(f"Testing {wer1.name} vs {wer2.name}", file=f)
-        print(f"Testing {wer1.name} vs {wer2.name}")
-        test_one_hundred_thousand_games(wer1, wer2, output=f)
-        print(file=f)
 
 
 
