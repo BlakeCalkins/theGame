@@ -90,7 +90,7 @@ class Paladin(Archetype):
     def __init__(self, name="Paladin"):
         super().__init__()
         self.name = name
-        self.default_life = 29
+        self.default_life = 28
     def calc_dmg(self, turn=None):
         return d6()
 
@@ -176,10 +176,10 @@ class Werewolf(Archetype):
         self.werewolf = False
     def calc_dmg(self, turn=None):
         if self.werewolf:
-            return d10()
+            return d12()
         else:
-            roll = d4()
-            if  roll == 4:
+            roll = d6()
+            if  roll == 5 or roll == 6:
                 self.werewolf = True
             return roll
 
@@ -189,7 +189,7 @@ class Needler(Archetype):
         self.name = name
     def calc_dmg(self, turn=None):
         dmg = 0
-        for _ in range(17):
+        for _ in range(16):
             if d6() == 1 or d6() == 2:
                 dmg += 1
         return dmg
@@ -350,7 +350,7 @@ def main():
     rad = Irradiated()
     archetypes = [rog, war, stg, msk, brd, ndl, frc, pal, acd, shs, dav, wer, rad, spd, wim]
     matchups = 0
-    with open("patch_20", "w") as f:
+    with open("patch_21", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
@@ -398,7 +398,7 @@ def mirrors():
     wer1 = Werewolf("Werewolf A")
     wer2 = Werewolf("Werewolf B")
 
-    with open("patch_20", "a") as f:
+    with open("patch_21", "a") as f:
         print(f"Testing {rog1.name} vs {rog2.name}", file=f)
         print(f"Testing {rog1.name} vs {rog2.name}")
         test_one_hundred_thousand_games(rog1, rog2, output=f)
