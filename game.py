@@ -349,7 +349,7 @@ def main():
     rad = Irradiated()
     archetypes = [rog, war, stg, msk, brd, frc, pal, acd, shs, dav, ndl, wer, rad, spd, wim]
     matchups = 0
-    with open("patch_10", "w") as f:
+    with open("patch_12", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
