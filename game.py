@@ -178,9 +178,10 @@ class Werewolf(Archetype):
         if self.werewolf:
             return d10()
         else:
-            if  d8() == 8:
+            roll = d4()
+            if  roll == 4:
                 self.werewolf = True
-            return d4()
+            return roll
 
 class Needler(Archetype):
     def __init__(self, name="Needler"):
@@ -349,7 +350,7 @@ def main():
     rad = Irradiated()
     archetypes = [rog, war, stg, msk, brd, ndl, frc, pal, acd, shs, dav, wer, rad, spd, wim]
     matchups = 0
-    with open("patch_19", "w") as f:
+    with open("patch_20", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
@@ -397,7 +398,7 @@ def mirrors():
     wer1 = Werewolf("Werewolf A")
     wer2 = Werewolf("Werewolf B")
 
-    with open("patch_19", "a") as f:
+    with open("patch_20", "a") as f:
         print(f"Testing {rog1.name} vs {rog2.name}", file=f)
         print(f"Testing {rog1.name} vs {rog2.name}")
         test_one_hundred_thousand_games(rog1, rog2, output=f)
