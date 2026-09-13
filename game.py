@@ -76,9 +76,9 @@ class Oracle(Archetype):
         self.dread += d8()
         if self.dread >= 10:
             self.dread = 0
-            return 12
+            return 13
         else:
-            return 2
+            return 3
     
 class Forcer(Archetype):
     def __init__(self, name="Forcer"):
@@ -181,12 +181,12 @@ class Werewolf(Archetype):
         self.werewolf = False
     def calc_dmg(self, turn=None):
         if self.werewolf:
-            return d10() + 1
+            return d20()
         else:
             roll = d6()
             if  roll == 5 or roll == 6:
                 self.werewolf = True
-            return roll + 1
+            return roll
 
 class Needler(Archetype):
     def __init__(self, name="Needler"):
@@ -196,7 +196,7 @@ class Needler(Archetype):
         dmg = 0
         for _ in range(12):
             roll = d6()
-            if roll == 1 or roll == 2:
+            if roll <= 3:
                 dmg += 1
         return dmg
 
@@ -356,7 +356,7 @@ def main():
     rad = Irradiated()
     archetypes = [rog, war, stg, msk, ocl, ndl, frc, pal, acd, shs, dav, wer, rad, spd, wim]
     matchups = 0
-    with open("patch_24", "w") as f:
+    with open("patch_25", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
@@ -404,7 +404,7 @@ def mirrors():
     wer1 = Werewolf("Werewolf A")
     wer2 = Werewolf("Werewolf B")
 
-    with open("patch_24", "a") as f:
+    with open("patch_25", "a") as f:
         print(f"Testing {rog1.name} vs {rog2.name}", file=f)
         print(f"Testing {rog1.name} vs {rog2.name}")
         test_one_hundred_thousand_games(rog1, rog2, output=f)
