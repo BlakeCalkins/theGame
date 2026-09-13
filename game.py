@@ -30,6 +30,8 @@ class Archetype:
         self.life = self.default_life
         if isinstance(self, Werewolf):
             self.werewolf = False
+        if isinstance(self, Oracle):
+            self.dread = 0
     def show_name(self):
         print(self.name)
 
@@ -65,15 +67,18 @@ class Musketeer(Archetype):
         if turn % 2 == 1:
             return 0
         
-class Bard(Archetype):
-    def __init__(self, name="Bard"):
+class Oracle(Archetype):
+    def __init__(self, name="Oracle"):
         super().__init__()
         self.name = name
+        self.dread = 0
     def calc_dmg(self, turn=None):
-        a = d20()
-        b = d20()
-        return max(0, abs(a-b) - 2)
-
+        self.dread += d8()
+        if self.dread >= 10:
+            self.dread = 0
+            return 12
+        else:
+            return 2
     
 class Forcer(Archetype):
     def __init__(self, name="Forcer"):
@@ -189,8 +194,9 @@ class Needler(Archetype):
         self.name = name
     def calc_dmg(self, turn=None):
         dmg = 0
-        for _ in range(16):
-            if d6() == 1 or d6() == 2:
+        for _ in range(12):
+            roll = d6()
+            if roll == 1 or roll == 2:
                 dmg += 1
         return dmg
 
@@ -304,7 +310,7 @@ def archetype_averages():
     war = Warrior()
     stg = Strategist()
     msk = Musketeer()
-    brd = Bard()
+    ocl = Oracle()
     frc = Forcer()
     pal = Paladin()
     acd = Academic()
@@ -319,7 +325,7 @@ def archetype_averages():
     print("warrior: ", test_one_hundred_thousand_times(war))
     print("strategist: ", test_one_hundred_thousand_times(stg))
     print("musketeer turns: ", test_one_hundred_thousand_times_turns(msk))
-    print("bard: ", test_one_hundred_thousand_times(brd))
+    print("oracle: ", test_one_hundred_thousand_times(ocl))
     # print("gambler_dmg_received: ", test_one_hundred_thousand_times(gambler_dmg_received))
     print("forcer turns: ", test_one_hundred_thousand_times_turns(frc))
     print("paladin turns: ", test_one_hundred_thousand_times_turns(pal))
@@ -337,7 +343,7 @@ def main():
     war = Warrior()
     stg = Strategist()
     msk = Musketeer()
-    brd = Bard()
+    ocl = Oracle()
     frc = Forcer()
     pal = Paladin()
     acd = Academic()
@@ -348,9 +354,9 @@ def main():
     ndl = Needler()
     wer = Werewolf()
     rad = Irradiated()
-    archetypes = [rog, war, stg, msk, brd, ndl, frc, pal, acd, shs, dav, wer, rad, spd, wim]
+    archetypes = [rog, war, stg, msk, ocl, ndl, frc, pal, acd, shs, dav, wer, rad, spd, wim]
     matchups = 0
-    with open("patch_23", "w") as f:
+    with open("patch_24", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
@@ -375,8 +381,8 @@ def mirrors():
     stg2 = Strategist("Strategist B")
     msk1 = Musketeer("Musketeer A")
     msk2 = Musketeer("Musketeer B")
-    brd1 = Bard("Bard A")
-    brd2 = Bard("Bard B")
+    ocl1 = Oracle("Oracle A")
+    ocl2 = Oracle("Oracle B")
     frc1 = Forcer("Forcer A")
     frc2 = Forcer("Forcer B")
     pal1 = Paladin("Paladin A")
@@ -398,7 +404,7 @@ def mirrors():
     wer1 = Werewolf("Werewolf A")
     wer2 = Werewolf("Werewolf B")
 
-    with open("patch_23", "a") as f:
+    with open("patch_24", "a") as f:
         print(f"Testing {rog1.name} vs {rog2.name}", file=f)
         print(f"Testing {rog1.name} vs {rog2.name}")
         test_one_hundred_thousand_games(rog1, rog2, output=f)
@@ -419,9 +425,9 @@ def mirrors():
         test_one_hundred_thousand_games(msk1, msk2, output=f)
         print(file=f)
 
-        print(f"Testing {brd1.name} vs {brd2.name}", file=f)
-        print(f"Testing {brd1.name} vs {brd2.name}")
-        test_one_hundred_thousand_games(brd1, brd2, output=f)
+        print(f"Testing {ocl1.name} vs {ocl2.name}", file=f)
+        print(f"Testing {ocl1.name} vs {ocl2.name}")
+        test_one_hundred_thousand_games(ocl1, ocl2, output=f)
         print(file=f)
 
         print(f"Testing {ndl1.name} vs {ndl2.name}", file=f)
