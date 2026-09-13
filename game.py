@@ -22,7 +22,6 @@ class Archetype:
         self.default_life = 20
         self.life = self.default_life
         self.name = "Archetype"
-        self.going_first = True
     def show_life(self):
         print(f"{self.name}'s life is {self.life}")
     def take_dmg(self, dmg):
@@ -74,7 +73,7 @@ class Oracle(Archetype):
         self.name = name
         self.dread = 0
     def calc_dmg(self, turn=None):
-        self.dread += d10()
+        self.dread += d12()
         if self.dread >= 12:
             self.dread = 0
             return 12
@@ -128,10 +127,7 @@ class Dave_from_HR(Archetype):
         super().__init__()
         self.name = name
     def calc_dmg(self, turn=None):
-        if self.going_first:
-            return 5
-        else:
-            return 4
+        return 5
 
 class Speedster(Archetype):
     def __init__(self, name="Speedster"):
@@ -206,8 +202,6 @@ class Needler(Archetype):
         
     
 def run_game(archetype_a, archetype_b, verbose=True):
-    archetype_a.going_first = True
-    archetype_b.going_first = False
     archetype_b.life += 2
     turn = 1
     damages = []
@@ -361,7 +355,7 @@ def main():
     rad = Irradiated()
     archetypes = [rog, war, stg, msk, ocl, ndl, frc, pal, acd, shs, dav, wer, rad, spd, wim]
     matchups = 0
-    with open("patch_28", "w") as f:
+    with open("patch_29", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
@@ -409,7 +403,7 @@ def mirrors():
     wer1 = Werewolf("Werewolf A")
     wer2 = Werewolf("Werewolf B")
 
-    with open("patch_28", "a") as f:
+    with open("patch_29", "a") as f:
         print(f"Testing {rog1.name} vs {rog2.name}", file=f)
         print(f"Testing {rog1.name} vs {rog2.name}")
         test_one_hundred_thousand_games(rog1, rog2, output=f)
