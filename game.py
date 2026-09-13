@@ -131,12 +131,12 @@ class Speedster(Archetype):
         self.name = name
     def calc_dmg(self, turn=None):
         sum = 0
-        coin = random.choice([1, 2])
-        sum += 3
-        if coin == 1:
-            while coin == 1:
-                coin = random.choice([1, 2])
-                sum += 3
+        roll = random.choice([2, 3])
+        sum += roll
+        if roll == 2:
+            while roll == 2:
+                roll = random.choice([2, 3])
+                sum += roll
         return sum
 
 class Wild_Mage(Archetype):
@@ -176,7 +176,7 @@ class Werewolf(Archetype):
         self.werewolf = False
     def calc_dmg(self, turn=None):
         if self.werewolf:
-            return d12() + 1
+            return d10() + 1
         else:
             roll = d6()
             if  roll == 5 or roll == 6:
@@ -350,7 +350,7 @@ def main():
     rad = Irradiated()
     archetypes = [rog, war, stg, msk, brd, ndl, frc, pal, acd, shs, dav, wer, rad, spd, wim]
     matchups = 0
-    with open("patch_22", "w") as f:
+    with open("patch_23", "w") as f:
         for i, type1 in enumerate(archetypes):
             for type2 in archetypes[i+1:]:
                 print(f"Testing {type1.name} vs {type2.name}", file=f)
@@ -398,7 +398,7 @@ def mirrors():
     wer1 = Werewolf("Werewolf A")
     wer2 = Werewolf("Werewolf B")
 
-    with open("patch_22", "a") as f:
+    with open("patch_23", "a") as f:
         print(f"Testing {rog1.name} vs {rog2.name}", file=f)
         print(f"Testing {rog1.name} vs {rog2.name}")
         test_one_hundred_thousand_games(rog1, rog2, output=f)
